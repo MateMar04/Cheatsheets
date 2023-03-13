@@ -17,23 +17,91 @@ Cuando un objeto nuevo es creado se inicializa clonando un objeto existente, mod
 - Las variables se pueden declarar sin un valor inicial.
   ```var nombre;```
 
-## Tipos de Datos Primitivos
+## Tipos de Datos 
 
 Estos son los principales tipos de datos en JavaScript
 
 ### Number
 Es usado para representar numeros, incluyendo enteros y numeros de punto flotante
 
+```
+var myNumber = 10;
+var myDecimalNumber = 1.2;
+```
+
 ### String
 Es usado para reprecentar texto, se encierra el texto entre comillas simples ('') o comillas dobles ("")
+
+```
+var myString = "Hello World!";
+var myNoun = 'Dog';
+```
 
 ### Boolean
 Es usado para reprecentar valores logicos (true o false)
 
+```
+var myBoolean = true;
+```
+
 ### Null
 Es usado para representar valores nulos o valores vacios
+
+```
+var myNull = null;
+```
 
 ### Undefined
 Es usado para representar una variable a la que todavia no se le ha asignado un valor.
 
-## Tipos de Datos de Objetos
+```
+var x;
+console.log(x); // Output: undefined
+```
+
+### Symbol
+Es usado para representar un valor unico e inmutable que puede ser usado como identificador para las propiedades de objeto
+
+```
+const obj = {};
+
+const sym = Symbol('foo');
+obj[sym] = 'bar';
+
+console.log(obj[sym]); // 'bar'
+
+```
+
+### Object
+Es una coleccion de pares key-value donde cada key es un string o symbol y el value puede ser cualquier tipo de dato, incluyendo tambien otro objeto.
+
+```
+var myObj = {
+  prop1: 'value1',
+  prop2: 42,
+  prop3: true,
+  prop4: {
+    nestedProp: 'nestedValue'
+  }
+};
+```
+
+<hr>
+
+JavaScript tambien tiene dos tipos de datos mas que son tecnicamente objetos:
+
+### Array
+Representa una lista ordenada de valores
+
+```
+var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+```
+
+### Function
+Representa un bloque de codigo reutilizable cada vez que se llama con distintos argumentos. (Argumentos != Parametros)
+
+```
+function add(a, b) {
+  return a + b;
+};
+```
