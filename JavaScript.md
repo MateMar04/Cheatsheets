@@ -105,3 +105,64 @@ function add(a, b) {
   return a + b;
 };
 ```
+
+
+## Variables
+
+### Var
+Es la forma original de declarar variables en Javascript. Es una variable accesible desde la funcion definida, es decir "function-scoped"
+
+```
+function example() {
+  var x = 5;
+  console.log(x);
+}
+
+example(); // Output: 5
+console.log(x); // Throws a ReferenceError because x is not defined outside of the example function
+```
+
+Aun asi si definimos una variable dentro de un bloque, como por ejemplo un ```if``` la variable va a poder ser accesible desde las otras partes del codigo ya var es "function-scoped" y no "block-scoped" 
+
+```
+if (true) {
+  var y = 10;
+}
+
+console.log(y); // Output: 10
+```
+
+### Let
+Es una variable que puede ser accedida solo desde el bloque en el que fue declarada. Un bloque es la seccion de codigo ecerrado entre llaves ```{}```, tal como una funcion o un bucle.
+
+```
+function example() {
+  let x = 1;
+  if (true) {
+    let x = 2;
+    console.log(x); // 2
+  }
+  console.log(x); // 1
+}
+example();
+```
+
+### Const
+Es usada para declarar una variable a las que no se les puede reasignar un valor una vez inicializadas. Al igual que ```let``` es una variable "block-scoped". Generalmente estas variables se escriben en mayusculas y las palabras estan separadas por guiones bajos ```__``` para poder diferenciarlas de otras variables y para no intentar re asignarle valores a lo largo del codigo. 
+Ej: ```MY_CONSTANT = 10;```
+
+```
+var x = 1; // function-scoped variable
+let y = 2; // block-scoped variable
+const Z = 3; // block-scoped constant
+
+if (true) {
+  var x = 4; // re-assigns the outer x variable
+  let y = 5; // creates a new block-scoped y variable
+  const Z = 6; // creates a new block-scoped z variable
+  console.log(x, y, Z); // 4 5 6
+}
+
+console.log(x, y, Z); // 4 2 3 (x has been re-assigned, y and z are unchanged)
+```
+
