@@ -352,3 +352,89 @@ este loop se ejecita si determinada condicion se evalua como ```true```
 while (condition)
   statement
 ```
+
+## Funciones
+Las funciones en JavaScript son una parte fundamental del lenguaje, se usan para encapsular codigo reutilizable y realizar tareas especificas. Las funciones se pueden definir de varias maneras como declaraciones de funcion, expresiones de funcion, arrow functions, y Immediately Invoked Function Expressions (IIFEs).
+
+### declaracion de funcion
+
+```
+function greet(name) {
+  console.log('Hello, ' + name + '!');
+}
+```
+
+La funcion llamada ```greet``` toma un parametro llamado ```name```. Cuando esta es llamada mostrara un mensaje en consola con el parametro ```name```
+
+### expresion de funcion
+
+```
+const greet = function(name) {
+  console.log('Hello, ' + name + '!');
+};
+```
+
+Esta funcion es similar a la anterior, pero se define usando una asignacion a una variable. La variable llamada ```greet``` tiene una funcion anonima que toma ```name``` como parametro.
+
+### Arrow functions
+
+```
+const greet = (name) => console.log('Hello, ' + name + '!');
+```
+
+Este codigo es equivalente al anterior, nada mas que esta usa la sintaxis de una ```arrow function```
+
+### IIFEs
+
+```
+(function() {
+  console.log('This code is self-contained and runs immediately!');
+})();
+```
+
+Esta funcion es definida e inmediatamente llamada usando parentesis al final de la declaracion. Esto puede ser util para crear variables privadas y funciones que no son accesibles desde el ```global scope```
+
+<hr>
+
+Las funcoines tambien pueden "retornar" valores usando la keyword ```return```, y pueden tomar multiples parametros. Las funciones pueden ser tambien argumentos de otras funciones, tambien ser asignadas a variables y "pasarlas" como cualquier otro tipo de dato.
+
+
+
+## Parametros de funciones
+Los parametros se usan para pasarle valores a las funciones. Estan definidos en la declaracion de la funcion y pueden usarse como variables adentro de la funcion.
+Hay dos tipos de sintaxis de parametros:
+
+### Parametros Default
+
+```
+function addNumbers(num1, num2) {
+  return num1 + num2;
+}
+```
+
+
+Esta funcion tiene un parametro con un valor predeterminado
+```
+function greet(name = 'friend') {
+  console.log('Hello, ' + name + '!');
+}
+```
+
+
+### Parametros Rest
+Este tipo de sintaxis sirve para tomar cualquier numero de argumentos.
+
+```
+function sumNumbers(...nums) {
+  let sum = 0;
+  for (let num of nums) {
+    sum += num;
+  }
+  return sum;
+}
+
+const result1 = sumNumbers(1, 2, 3);
+const result2 = sumNumbers(4, 5, 6, 7, 8);
+console.log(result1); // output: 6
+console.log(result2); // output: 30
+```
