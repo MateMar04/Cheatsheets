@@ -438,3 +438,176 @@ const result2 = sumNumbers(4, 5, 6, 7, 8);
 console.log(result1); // output: 6
 console.log(result2); // output: 30
 ```
+
+## Operadores
+Expresion que se resuelve a un valor
+
+### Asignacion
+Estos son los operadores de asignacion mas comunes
+
+```
+x = f()      // Significa x = f()
+x += f()     // Significa x = x + f()
+x -= f()     // Significa x = x - f()
+x *= f()     // Significa x = x * f()
+x /= f()     // Significa x = x / f()
+x %= f()     // Significa x = x % f()
+x **= f()    // Significa x = x ** f()
+```
+
+
+
+### Operadores de Comparacion
+Un operador de comparacion compara los operandos y devuelve un valor logico basado si la comparacion es ```true``` o ```false```
+
+
+Teniendo en cuenta que:
+```
+const var1 = 3;
+const var2 = 4;
+```
+
+
+#### Igual
+El operador igual (```==```) devuelve ```true``` si los operandos son iguales 
+
+Valores que devuelven ```true```:
+```
+3 == var1
+"3" == var1
+3 == '3'
+```
+
+#### No es Igual
+El operador no igual (```!=```) devuelve ```true``` si los operandos no son iguales
+
+Valores que devuelven ```true```:
+```
+var1 != 4  
+var2 != "3"
+```
+
+#### Igual Estricto
+El operador igual estricto (```===```) devuelve ```true``` si los operandos son iguales y del mismo tipo 
+
+Valores que devuelven ```true```:
+```
+3 === var1
+```
+
+#### No es Igual Estricto
+El operador no es igual estricto (```!==```) devuelve ```true``` si los operandos no son del mismo tipo o si son del mismo tipo pero distinto valor. 
+
+Valores que devuelven ```true```:
+```
+var1 !== "3"  
+3 !== '3'
+```
+
+#### Mayor
+El operador mayor que (```>```) devuelve ```true``` si el operando de la izquierda es mayor que el de la derecha
+
+Valores que devuelven ```true```:
+```
+var2 > var1  
+"12" > 2
+```
+
+#### Mayor o igual
+El operador mayor o igual que (```>=```) devuelve ```true``` si el operando de la izquierda es mayor o igual que el de la derecha
+
+Valores que devuelven ```true```:
+```
+var2 >= var1  
+var1 >= 3
+```
+
+#### Menor
+El operador menor que (```<```) devuelve ```true``` si el operando de la izquierda es menor que el de la derecha
+
+Valores que devuelven ```true```:
+```
+var1 < var2  
+"2" < 12
+```
+
+#### Menor o Igual
+El operador menor o igual que (```<=```) devuelve ```true``` si el operando de la izquierda es menor o igual que el de la derecha
+
+Valores que devuelven ```true```:
+```
+var1 <= var2  
+var2 <= 5
+```
+
+
+
+### Operadores Aritmeticos
+Los operadores toman valores numericos y retornan un solo numero. Los operadores aritmeticos  estandar son la suma (```+```), resta (```-```), multiplicacion (```*```) y division (```/```). Nota: la division por cero produce ```Infinity```.
+
+#### Resto
+Retorna el valor entero entre la division de dos operandos.
+Ejemplo: 12 % 5 retorna 2.
+
+#### Exponencial
+Calcula la base elevado al exponente
+Ejemplo: 2 ** 3 devuelve 8.
+
+#### Incremento
+Añade uno al operando.
+Ejemplo: Si `x` es 3, entonces `++x` le añade uno y devuelve 4 pero `x++` devuelve 3 y luego le añade uno.
+
+#### Decremento
+Resta uno al operando
+Ejemplo: Si `x` es 3, entonces `--x` le resta uno y devuelve 2 pero `x--` devuelve 3 y luego le resta uno.
+
+
+
+### Operadores Logicos
+Estos operadores son comunmente usados con valores booleanos
+
+#### AND
+```
+const a1 = true && true; // t && t returns true
+const a2 = true && false; // t && f returns false
+const a3 = false && true; // f && t returns false
+```
+
+#### OR
+```
+const o1 = true || true; // t || t returns true
+const o2 = false || true; // f || t returns true
+const o3 = true || false; // t || f returns true
+```
+
+#### NOT
+```
+const n1 = !true; // !t returns false
+const n2 = !false; // !f returns true
+```
+
+
+
+### String Operators
+
+```
+console.log("my " + "string"); // console logs the string "my string".
+```
+
+```
+let mystring = "alpha";
+mystring += "bet"; // evaluates to "alphabet" and assigns this value to mystring.
+```
+
+### Operadores Ternarios
+Son operadores que toman tres operandos.
+
+```
+condition ? val1 : val2
+```
+
+Si la condicion es ```true``` el valor es ```val1```, si es ```false``` es el valor ```val2```
+
+```
+const status = age >= 18 ? "adult" : "minor";
+```
