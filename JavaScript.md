@@ -268,3 +268,87 @@ console.log(f()); // 0, 1, 3, false
 ```
 
 ## Loops
+
+Los loops son una manera facil y rapida de hacer algo repetidamente.
+
+### for
+Un loop ```for``` se repite hasta que determinada condicion se evalue como ```false```
+Cuando un ```for``` se ejecuta sucede lo siguiente:
+1. Se ejecuta la expresion de inicializacion, si es que hay alguna. Esta expresion inicializa generalmente contadores, pero la sintaxis permite una expresion de cualquier nivel de complejidad. esta expresion tambien puede declarar variables.
+2. La condicion es evaluada, si es ```true``` el loop se ejecuta, de lo contrario se termina
+3. Se ejecuta el codigo dentro del bloque ```for```
+4. Si esta presente se ejecuta la expresion ```afterthought```
+5. Se vuelve al punto 2
+
+```
+for (initialization; condition; afterthought)
+  statement
+
+```
+
+### for..in
+Se ejecuta iterando determinada variable enumerable
+
+```
+for (variable in object)
+  statement
+```
+
+Este for itera sobre las propiedades de un objeto
+
+```
+const person = { name: 'John', age: 30, address: '123 Main St' };
+
+for (let prop in person) {
+  console.log(prop + ': ' + person[prop]);
+}
+
+OUTPUT:
+name: John
+age: 30
+address: 123 Main St
+```
+
+### for...of
+
+Tambien e ejecuta iterando determinada variable enumerable
+
+```
+for (variable of object)
+  statement
+```
+
+Este ```for``` itera sobre valor
+
+```
+const arr = [1, 2, 3];
+
+for (let value of arr) {
+  console.log(value);
+}
+
+OUTPUT:
+1
+2
+3
+
+```
+
+### do...while
+Este loop se ejecuta hasta que determinada condicion se evalue como ```false```
+la declaracion siempre se ejecuta una vez antes de comprobar la condicion, si esta se evalua como ```true``` la declaracion se vuelve a ejecutar hasta que la condicion se evalue como ```false```
+
+```
+do
+  statement
+while (condition);
+```
+
+
+### while
+este loop se ejecita si determinada condicion se evalua como ```true```
+
+```
+while (condition)
+  statement
+```
