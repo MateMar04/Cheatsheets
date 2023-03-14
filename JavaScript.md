@@ -37,6 +37,21 @@ var myString = "Hello World!";
 var myNoun = 'Dog';
 ```
 
+Los strings se comportan como listas, se puede acceder a cada caracter como si fuera un elemento de un ```Array```
+
+Tambien existen las secuencias de escape que sirven para representar determinados caracteres reservados en un string
+```
+\' ----> Comilla simple
+\" ----> Comilla doble
+\\ ----> Barra invertida
+\n ----> Nueva linea
+\r ----> Retorno de carro
+\t ----> Tabulacion
+\f ----> Salto de pagina
+```
+
+
+
 ### Boolean
 Es usado para representar valores lógicos (true o false)
 
@@ -86,6 +101,26 @@ var myObj = {
 };
 ```
 
+Para acceder a las propiedades de un objeto se pueden usar dos metodos:
+
+- La notacion de punto:
+```
+console.log(myObj.prop1);
+```
+
+- Notacion de corchetes:
+```
+console.log(myObj["prop1"]);
+```
+
+
+Las propiedades de estos tambien se pueden modificar de las dos formas anteriores
+
+```
+myObj.prop1 = 10;
+myObj["prop2"] = "hello";
+```
+
 <hr>
 
 JavaScript también tiene dos tipos de datos más que son técnicamente objetos:
@@ -96,6 +131,14 @@ Representa una lista ordenada de valores
 ```
 var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 ```
+
+Los principales metodos de este objeto son:
+
+.push(): sirve para agregar elementos a un Array al final del mismo.
+.pop(): sirve para eliminar y retornar el ultimo elemento de un Array.
+.shift(): sirve para eliminar y retornar el primer elemento de un Array.
+.unshift(): sirve para agregar elementos al inicio de un Array.
+
 
 ### Function
 Representa un bloque de código reutilizable cada vez que se llama con distintos argumentos. (Argumentos != Parámetros)
