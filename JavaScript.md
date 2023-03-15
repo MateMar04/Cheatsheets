@@ -37,9 +37,9 @@ var myString = "Hello World!";
 var myNoun = 'Dog';
 ```
 
-Los strings se comportan como listas, se puede acceder a cada caracter como si fuera un elemento de un ```Array```
+Los strings se comportan como listas, se puede acceder a cada carácter como si fuera un elemento de un ```Array```
 
-Tambien existen las secuencias de escape que sirven para representar determinados caracteres reservados en un string
+También existen las secuencias de escape que sirven para representar determinados caracteres reservados en un string
 ```
 \' ----> Comilla simple
 \" ----> Comilla doble
@@ -53,7 +53,7 @@ Tambien existen las secuencias de escape que sirven para representar determinado
 
 
 ### Boolean
-Es usado para representar valores lógicos (true o false)
+Es usado para representar valores lógicos (```true``` o ```false```)
 
 ```
 var myBoolean = true;
@@ -101,20 +101,20 @@ var myObj = {
 };
 ```
 
-Para acceder a las propiedades de un objeto se pueden usar dos metodos:
+Para acceder a las propiedades de un objeto se pueden usar dos métodos:
 
-- La notacion de punto:
+- La notación de punto:
 ```
 console.log(myObj.prop1);
 ```
 
-- Notacion de corchetes:
+- Notación de corchetes:
 ```
 console.log(myObj["prop1"]);
 ```
 
 
-Las propiedades de estos tambien se pueden modificar de las dos formas anteriores
+Las propiedades de estos también se pueden modificar de las dos formas anteriores
 
 ```
 myObj.prop1 = 10;
@@ -132,12 +132,12 @@ Representa una lista ordenada de valores
 var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 ```
 
-Los principales metodos de este objeto son:
+Los principales métodos de este objeto son:
 
-.push(): sirve para agregar elementos a un Array al final del mismo.
-.pop(): sirve para eliminar y retornar el ultimo elemento de un Array.
-.shift(): sirve para eliminar y retornar el primer elemento de un Array.
-.unshift(): sirve para agregar elementos al inicio de un Array.
+```.push()```: sirve para agregar elementos a un ```Array``` al final del mismo.
+```.pop()```: sirve para eliminar y retornar el último elemento de un ```Array```.
+```.shift()```: sirve para eliminar y retornar el primer elemento de un ```Array```.
+```.unshift()```: sirve para agregar elementos al inicio de un ```Array```.
 
 
 ### Function
@@ -285,8 +285,8 @@ throw {
 ```
 
 ### try...catch
-Es un bloque de codigo que intenta (```try```) ejecutar uncódigoo y si este“tira”" una excepción el ```catch```  lo "agarra".
-Tambien existe el bloque ```finally``` que se ejecuta siempre, ya sea que se agarre la excepcion o no.
+Es un bloque de codigo que intenta (```try```) ejecutar código y si este“tira” una excepción, el ```catch```  lo “agarra”.
+También existe el bloque ```finally``` que se ejecuta siempre, ya sea que se agarre la excepción o no.
 
 ```
 function f() {
@@ -312,15 +312,15 @@ console.log(f()); // 0, 1, 3, false
 
 ## Loops
 
-Los loops son una manera facil y rapida de hacer algo repetidamente.
+Los loops son una manera fácil y rápida de hacer algo repetidamente.
 
 ### for
-Un loop ```for``` se repite hasta que determinada condicion se evalue como ```false```
+Un loop ```for``` se repite hasta que determinada condición se evalúe como ```false```
 Cuando un ```for``` se ejecuta sucede lo siguiente:
-1. Se ejecuta la expresion de inicializacion, si es que hay alguna. Esta expresion inicializa generalmente contadores, pero la sintaxis permite una expresion de cualquier nivel de complejidad. esta expresion tambien puede declarar variables.
-2. La condicion es evaluada, si es ```true``` el loop se ejecuta, de lo contrario se termina
+1. Se ejecuta la expresión de inicialización, si es que hay alguna. Esta expresión inicializa generalmente contadores, pero la sintaxis permite una expresión de cualquier nivel de complejidad. Esta expresión también puede declarar variables.
+2. La condición es evaluada, si es ```true``` el loop se ejecuta, de lo contrario se termina
 3. Se ejecuta el codigo dentro del bloque ```for```
-4. Si esta presente se ejecuta la expresion ```afterthought```
+4. Si está presente se ejecuta la expresión ```afterthought```
 5. Se vuelve al punto 2
 
 ```
@@ -354,7 +354,7 @@ address: 123 Main St
 
 ### for...of
 
-Tambien e ejecuta iterando determinada variable enumerable
+También se ejecuta iterando determinada variable enumerable
 
 ```
 for (variable of object)
@@ -378,8 +378,8 @@ OUTPUT:
 ```
 
 ### do...while
-Este loop se ejecuta hasta que determinada condicion se evalue como ```false```
-la declaracion siempre se ejecuta una vez antes de comprobar la condicion, si esta se evalua como ```true``` la declaracion se vuelve a ejecutar hasta que la condicion se evalue como ```false```
+Este loop se ejecuta hasta que determinada condición se evalúe como ```false```
+la declaración siempre se ejecuta una vez antes de comprobar la condición, si esta se evalúa como ```true``` la declaración se vuelve a ejecutar hasta que la condición se evalúe como ```false```
 
 ```
 do
@@ -389,7 +389,7 @@ while (condition);
 
 
 ### while
-este loop se ejecita si determinada condicion se evalua como ```true```
+este loop se ejecuta si determinada condición se evalúa como ```true```
 
 ```
 while (condition)
@@ -397,9 +397,9 @@ while (condition)
 ```
 
 ## Funciones
-Las funciones en JavaScript son una parte fundamental del lenguaje, se usan para encapsular codigo reutilizable y realizar tareas especificas. Las funciones se pueden definir de varias maneras como declaraciones de funcion, expresiones de funcion, arrow functions, y Immediately Invoked Function Expressions (IIFEs).
+Las funciones en JavaScript son una parte fundamental del lenguaje, se usan para encapsular codigo reutilizable y realizar tareas específicas. Las funciones se pueden definir de varias maneras como declaraciones de función, expresiones de función, arrow functions, y Immediately Invoked Function Expressions (IIFEs).
 
-### declaracion de funcion
+### Declaración de función
 
 ```
 function greet(name) {
@@ -407,9 +407,9 @@ function greet(name) {
 }
 ```
 
-La funcion llamada ```greet``` toma un parametro llamado ```name```. Cuando esta es llamada mostrara un mensaje en consola con el parametro ```name```
+La función llamada ```greet``` toma un parámetro llamado ```name```. Cuando esta es llamada mostrara un mensaje en consola con el parámetro ```name```
 
-### expresion de funcion
+### Expresión de función
 
 ```
 const greet = function(name) {
@@ -417,7 +417,7 @@ const greet = function(name) {
 };
 ```
 
-Esta funcion es similar a la anterior, pero se define usando una asignacion a una variable. La variable llamada ```greet``` tiene una funcion anonima que toma ```name``` como parametro.
+Esta función es similar a la anterior, pero se define usando una asignación a una variable. La variable llamada ```greet``` tiene una función anónima que toma ```name``` como parámetro.
 
 ### Arrow functions
 
@@ -425,7 +425,7 @@ Esta funcion es similar a la anterior, pero se define usando una asignacion a un
 const greet = (name) => console.log('Hello, ' + name + '!');
 ```
 
-Este codigo es equivalente al anterior, nada mas que esta usa la sintaxis de una ```arrow function```
+Este codigo es equivalente al anterior, nada más que esta usa la sintaxis de una ```arrow function```
 
 ### IIFEs
 
@@ -435,19 +435,19 @@ Este codigo es equivalente al anterior, nada mas que esta usa la sintaxis de una
 })();
 ```
 
-Esta funcion es definida e inmediatamente llamada usando parentesis al final de la declaracion. Esto puede ser util para crear variables privadas y funciones que no son accesibles desde el ```global scope```
+Esta función es definida e inmediatamente llamada usando paréntesis al final de la declaración. Esto puede ser útil para crear variables privadas y funciones que no son accesibles desde él ```global scope```
 
 <hr>
 
-Las funcoines tambien pueden "retornar" valores usando la keyword ```return```, y pueden tomar multiples parametros. Las funciones pueden ser tambien argumentos de otras funciones, tambien ser asignadas a variables y "pasarlas" como cualquier otro tipo de dato.
+Las funciones también pueden “retornar” valores utilizando la keyword ```return```, y pueden tomar múltiples parámetros. Las funciones pueden ser también argumentos de otras funciones, también ser asignadas a variables y “pasarlas” como cualquier otro tipo de dato.
 
 
 
-## Parametros de funciones
-Los parametros se usan para pasarle valores a las funciones. Estan definidos en la declaracion de la funcion y pueden usarse como variables adentro de la funcion.
-Hay dos tipos de sintaxis de parametros:
+## Parámetros de funciones
+Los parámetros se utilizan para pasarle valores a las funciones. Están definidos en la declaración de la función y pueden utilizarse como variables adentro de la función.
+Hay dos tipos de sintaxis de parámetros:
 
-### Parametros Default
+### Parámetros Default
 
 ```
 function addNumbers(num1, num2) {
@@ -456,7 +456,7 @@ function addNumbers(num1, num2) {
 ```
 
 
-Esta funcion tiene un parametro con un valor predeterminado
+Esta función tiene un parámetro con un valor predeterminado
 ```
 function greet(name = 'friend') {
   console.log('Hello, ' + name + '!');
@@ -464,8 +464,8 @@ function greet(name = 'friend') {
 ```
 
 
-### Parametros Rest
-Este tipo de sintaxis sirve para tomar cualquier numero de argumentos.
+### Parámetros Rest
+Este tipo de sintaxis sirve para tomar cualquier número de argumentos.
 
 ```
 function sumNumbers(...nums) {
@@ -483,10 +483,10 @@ console.log(result2); // output: 30
 ```
 
 ## Operadores
-Expresion que se resuelve a un valor
+Expresión que se resuelve a un valor
 
-### Asignacion
-Estos son los operadores de asignacion mas comunes
+### Asignación
+Estos son los operadores de asignación más comunes:
 
 ```
 x = f()      // Significa x = f()
@@ -500,8 +500,8 @@ x **= f()    // Significa x = x ** f()
 
 
 
-### Operadores de Comparacion
-Un operador de comparacion compara los operandos y devuelve un valor logico basado si la comparacion es ```true``` o ```false```
+### Operadores de Comparación
+Un operador de comparación compara los operandos y devuelve un valor lógico basado si la comparación es ```true``` o ```false```
 
 
 Teniendo en cuenta que:
@@ -585,11 +585,11 @@ var2 <= 5
 
 
 
-### Operadores Aritmeticos
-Los operadores toman valores numericos y retornan un solo numero. Los operadores aritmeticos  estandar son la suma (```+```), resta (```-```), multiplicacion (```*```) y division (```/```). Nota: la division por cero produce ```Infinity```.
+### Operadores Aritméticos
+Los operadores toman valores numéricos y retornan un solo número. Los operadores aritméticos  estándar son la suma (```+```), resta (```-```), multiplicación (```*```) y división (```/```). Nota: la división por cero produce ```Infinity```.
 
 #### Resto
-Retorna el valor entero entre la division de dos operandos.
+Retorna el valor entero entre la división de dos operandos.
 Ejemplo: 12 % 5 retorna 2.
 
 #### Exponencial
@@ -598,16 +598,16 @@ Ejemplo: 2 ** 3 devuelve 8.
 
 #### Incremento
 Añade uno al operando.
-Ejemplo: Si `x` es 3, entonces `++x` le añade uno y devuelve 4 pero `x++` devuelve 3 y luego le añade uno.
+Ejemplo: Si `x` es 3, entonces `++x` le añade uno y devuelve 4, pero `x++` devuelve 3 y luego le añade uno.
 
 #### Decremento
 Resta uno al operando
-Ejemplo: Si `x` es 3, entonces `--x` le resta uno y devuelve 2 pero `x--` devuelve 3 y luego le resta uno.
+Ejemplo: Si `x` es 3, entonces `--x` le resta uno y devuelve 2, pero `x--` devuelve 3 y luego le resta uno.
 
 
 
-### Operadores Logicos
-Estos operadores son comunmente usados con valores booleanos
+### Operadores Lógicos
+Estos operadores son comúnmente usados con valores booleanos
 
 #### AND
 ```
@@ -649,7 +649,7 @@ Son operadores que toman tres operandos.
 condition ? val1 : val2
 ```
 
-Si la condicion es ```true``` el valor es ```val1```, si es ```false``` es el valor ```val2```
+Si la condición es ```true``` el valor es ```val1```, si es ```false``` es el valor ```val2```
 
 ```
 const status = age >= 18 ? "adult" : "minor";
