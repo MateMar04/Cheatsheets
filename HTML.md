@@ -1,33 +1,33 @@
 # HTML
-HTML proviene de HyperText Markup Language. Es un lenguaje de markup standard utilizado para crear paginas web y otra informacion que puede ser mostrada en un navegador web. HTML usa varias etiquetas y atributos para describir la estructura y contenido de una pagina web, icluyendo encabezados, parrafos, listas, links, imagens y otros tipos de elementos multimedia.
-HTML es el bloque de construccion basico para el desarrollo web, y es escencial para crear paginas web estaticas y dinamicas. Puede ser usado en conjunto con CSS (Cascading Style Sheets) y JavaScript para crear paginas mas interactivas y reactivas.
+HTML proviene de HyperText Markup Language. Es un lenguaje de markup estándar utilizado para crear páginas web y otra información que puede ser mostrada en un navegador web. HTML usa varias etiquetas y atributos para describir la estructura y contenido de una página web, incluyendo encabezados, párrafos, listas, links, imágenes y otros tipos de elementos multimedia.
+HTML es el bloque de construcción básico para el desarrollo web, y es esencial para crear páginas web estáticas y dinámicas. Puede ser utilizado en conjunto con CSS (Cascading Style Sheets) y JavaScript para crear páginas más interactivas y reactivas.
 
 ## Etiquetas
-Las estiquetas se isan para definir estructuras y contenido en una pagina web. Estan encerradas entre ```<>``` y usualmente vienen en pares, el ```opening tag``` indicando el inicio de una seccion de contenido y el ```closing tag``` indicando el final de la seccion.
+Las etiquetas se usan para definir estructuras y contenido en una página web. Están encerradas entre ```<>``` y usualmente vienen en pares, el ```opening tag``` indicando el inicio de una sección de contenido y el ```closing tag``` indicando el final de la sección.
 
 ## Atributos
-Proveen a los elementos informacion adicional, se agregan en el ```opening tag``` del elemento
+Proveen a los elementos información adicional, se agregan en el ```opening tag``` del elemento
 
 ### ```<!DOCTYPE>```
-Esta al principio del documento html, especifica la version de html que se esta usando y ayuda al navegador a interpretar correctamente el codigo
+Está al principio del documento HTML, especifica la versión de HTML que se está usando y ayuda al navegador a interpretar correctamente el codigo
 
 ```<!DOCTYPE html>``` 
 
-Esta declaracion se usa para documentos HTML5
+Esta declaración se usa para documentos HTML5
 
 
 ### ```<html>```
-Este ```tag``` es el elemento raiz de un documento HTML. Especifica que el documento es de tipo HTML 
+Este ```tag``` es el elemento raíz de un documento HTML. Especifica que el documento es de tipo HTML 
 
 
 ### ```<head>```
-Se usa para deefinir una seccion del documento HTML. Esta seccion provee metadata sobre el documento, tales como titulo, links a las hojas de estilo, scripts, y otra informacion que no se muestra en la pagina. Este tag puede conterener varios otros:
+Se utiliza para definir una sección del documento HTML. Esta sección provee metadata sobre el documento, tales como título, links a las hojas de estilo, scripts, y otra información que no se muestra en la página. Este tag puede contener varios otros:
 
 #### ```<title>```
-Contiene el titulo con el que se mostrara la pagina
+Contiene el título con el que se mostrara la página
 
 #### ```<meta>```
-Especifica la codificacion de caracteres del documento
+Especifica la codificación de caracteres del documento
 
 #### ```<link>```
 Linkeea recursos externos, generalmente hojas de estilos (stylesheets)
@@ -53,8 +53,8 @@ Podemos ver el siguiente ejemplo:
 ```
 
 
-### \<body>
-Se usa para definir la seccion ```body``` del documento HTML. Contiene todo el contenido visible de la pagina web, tales como titulos, parrafos, iamgenes, links y otros elementos.
+### ```<body>```
+Se utiliza para definir la sección ```body``` del documento HTML. Contiene todo el contenido visible de la página web, tales como títulos, párrafos, imágenes, links y otros elementos.
 
 Podemos ver el siguiente ejemplo:
 
@@ -74,25 +74,45 @@ Podemos ver el siguiente ejemplo:
 ```
 
 ### ```<h1>, <h2>, ... <h6>```
-Se usan para definir titulos. Tienen 6 niveles, mientras mas grande es el numero que acompaña la h el titulo es menos importante.
+Se utilizan para definir títulos. Tienen 6 niveles, mientras más grande es el número que acompaña la h el título es menos importante.
 
 Ejemplo:
 ```
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>My Web Page</title>
-  </head>
-  <body>
-    <h1>Welcome to my web page</h1>
-    <h2>Welcome to my web page</h2>
-    <h3>Welcome to my web page</h3>
-    <h4>Welcome to my web page</h4>
-    <h5>Welcome to my web page</h5>
-    <h6>Welcome to my web page</h6>
-  </body>
-</html>
+<h1>Welcome to my web page</h1>
+<h2>Welcome to my web page</h2>
+<h3>Welcome to my web page</h3>
+<h4>Welcome to my web page</h4>
+<h5>Welcome to my web page</h5>
+<h6>Welcome to my web page</h6>
 ```
 
 
+### ```<p>```
+Se utiliza para definir un párrafo de texto.
 
+```
+<p>This is a paragraph of text.</p>
+```
+
+### ```<img>```
+Se utiliza para insertar imágenes en la página web, no necesita ```tag``` de cierre. Utiliza atributos para especificar la fuente, ancho, alto, etc. de la imagen.
+
+```
+<img src="image.jpg" alt="A picture of a cat">
+```
+
+
+### ```<a>```
+Este tag se utiliza para crear hipervínculos o ```anchor links```.
+
+```
+<a href="https://www.example.com">Click here</a>
+```
+
+En este ejemplo el atributo ```href``` especifica una URL, al hacer clic en el anchor te redirija a la URL especificada
+
+```
+<a href="#section2">Go to section 2</a>
+```
+
+En este ejemplo el anchor te lleva a la sección 2 del documento HTML.
