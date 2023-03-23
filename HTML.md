@@ -3,7 +3,8 @@ HTML proviene de HyperText Markup Language. Es un lenguaje de markup estándar u
 HTML es el bloque de construcción básico para el desarrollo web, y es esencial para crear páginas web estáticas y dinámicas. Puede ser utilizado en conjunto con CSS (Cascading Style Sheets) y JavaScript para crear páginas más interactivas y reactivas.
 
 ## Etiquetas
-Las etiquetas se usan para definir estructuras y contenido en una página web. Están encerradas entre ```<>``` y usualmente vienen en pares, el ```opening tag``` indicando el inicio de una sección de contenido y el ```closing tag``` indicando el final de la sección.
+Las etiquetas se usan para definir estructuras y contenido en una página web. Están encerradas entre ```<>``` y usualmente vienen en pares, el ```opening tag```  (```<>```) indicando el inicio de una sección de contenido y el ```closing tag``` (```</>```) indicando el final de la sección.
+Hay etiquetas que no necesitan ```closing tag```, estas se llaman ```self closing tags```
 
 ## Atributos
 Proveen a los elementos información adicional, se agregan en el ```opening tag``` del elemento
@@ -95,7 +96,7 @@ Se utiliza para definir un párrafo de texto.
 ```
 
 ### ```<img>```
-Se utiliza para insertar imágenes en la página web, no necesita ```tag``` de cierre. Utiliza atributos para especificar la fuente, ancho, alto, etc. de la imagen.
+Se utiliza para insertar imágenes en la página web, no necesita ```tag``` de cierre. Utiliza atributos para especificar la fuente, ancho, alto, etc. de la imagen. Esta es una ```self closing tag```
 
 ```
 <img src="image.jpg" alt="A picture of a cat">
@@ -119,7 +120,7 @@ En este ejemplo el anchor te lleva a la sección 2 del documento HTML.
 
 ### ```<ul>```
 Este tag se utiliza para hacer una lista no ordenada, proviene de "unorderd list".
-Este tag si o si tiene que ir acomañado del tag ```<li>``` "list item" que representa cada elemento de la lista.
+Este tag si o si tiene que ir acompañado del tag ```<li>``` "list item" que representa cada elemento de la lista.
 
 ```
 <ul>
@@ -130,7 +131,7 @@ Este tag si o si tiene que ir acomañado del tag ```<li>``` "list item" que repr
 ```
 
 ### ```<ol>```
-Este tag se utiliza para hacer lisstas ordenadas, proviene de "ordered list". al igual que el tag ```<ul>``` esta acompañado del tag ```<li>```.
+Este tag se utiliza para hacer listas ordenadas, proviene de "ordered list". Al igual que el tag ```<ul>``` está acompañado del tag ```<li>```.
 
 ```
 <ol>
@@ -141,38 +142,92 @@ Este tag se utiliza para hacer lisstas ordenadas, proviene de "ordered list". al
 ```
 
 ### ```<strong>```
-Sirve para darle enfasis a un texto. Este texto se mostrara en negrita.
+Sirve para darle énfasis a un texto. Este texto se mostrará en negrita.
 
 ```
 <p>This sentence contains some <strong>important information</strong>.</p>
 ```
 
 ### ```<em>```
-Al igual que el tag ```<strong>``` sirve para dar enfasis. Por defeto el texto se mostrara en italica.
+Al igual que el tag ```<strong>``` sirve para dar énfasis. Por defecto, el texto se mostrará en itálica.
 
 ```
 <p>This sentence contains some <em>emphasized text</em>.</p>
 ```
 
 ### ```<s>```
-Se usa para indicar que el texto tiene un strikethrough. Generalemte sirve para indicar que algo se elimino o no es relevante pero sigue estando visible para la referencia.
+Se usa para indicar que el texto tiene un strikethrough. Generalmente, sirve para indicar que algo se eliminó o no es relevante, pero sigue estando visible para la referencia.
 
 ```
 <p>This is some <s>strikethrough</s> text.</p>
 ```
 
 ### ```<small>```
-Se usa para indicar que el texto que contiene es mas pequeño.
+Se usa para indicar que el texto que contiene es más pequeño.
 
 ```
 <p>This is some <small>smaller text</small> in a paragraph.</p>
 ```
 
 ### ```<hr>```
-Es un ```self closing tag``` que se usa para crear una "regla horizontal"  o una linea horizontal que separa contenido visualmente
+Es un ```self closing tag``` que se usa para crear una "regla horizontal"  o una línea horizontal que separa contenido visualmente
 
 ```
 <p>This is some content.</p>
 <hr>
 <p>This is some more content.</p>
 ```
+
+### ```<br>```
+Es un ```self closing tag``` que se usa para crear un salto de línea
+
+```
+<p>This is some content.<br>This is some more content on a new line.</p>
+```
+
+### ```<form>```
+Es un elemento que se utiliza para crear un formulario que el usuario tenga que completar. Se pueden agregar distintos tipos de campos con el tag ```<input>```, como campos de texto, radiobuttons, checkboxes, dropdowns, botones, etc
+
+```
+<form action="/submit-form" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name"><br><br>
+  <input type="submit" value="Submit">
+</form>
+```
+
+En este ejemplo el atributo ```action``` especifica la URL donde la información será enviada. y el atributo ```method``` especifica el ```HTTP request method``` que puede ser ```POST```, ```GET```, entre otros.
+
+### ```<div>```
+Es un elemento que se utiliza para agrupar otros elementos y aplicar estilos colectivamente. Es un contenedor genérico que no tiene ni especifica sentido o propósito. Estos tags se pueden anidar para crear una jerarquía
+
+
+### ```<nav>```
+Se usa para definir una "navbar", una sección de la página que generalmente suele ser el menú y contiene links a otras páginas o secciones
+
+```
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About Us</a></li>
+    <li><a href="/contact">Contact Us</a></li>
+  </ul>
+</nav>
+```
+
+### ```<footer>```
+Se utiliza para definir un "footer", una sección de la página. Generalmente, esta contiene información sobre el autor, copyright, fuentes, medios de contacto, links, etc.
+
+```
+<footer>
+  <p>&copy; 2023 My Website. All rights reserved.</p>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</footer>
+```
+
