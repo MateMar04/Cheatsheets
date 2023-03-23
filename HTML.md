@@ -116,3 +116,63 @@ En este ejemplo el atributo ```href``` especifica una URL, al hacer clic en el a
 ```
 
 En este ejemplo el anchor te lleva a la sección 2 del documento HTML.
+
+### ```<ul>```
+Este tag se utiliza para hacer una lista no ordenada, proviene de "unorderd list".
+Este tag si o si tiene que ir acomañado del tag ```<li>``` "list item" que representa cada elemento de la lista.
+
+```
+<ul>
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+  <li>Elemento 3</li>
+</ul>
+```
+
+### ```<ol>```
+Este tag se utiliza para hacer lisstas ordenadas, proviene de "ordered list". al igual que el tag ```<ul>``` esta acompañado del tag ```<li>```.
+
+```
+<ol>
+  <li>Elemento 1</li>
+  <li>Elemento 2</li>
+  <li>Elemento 3</li>
+</ol>
+```
+
+### ```<strong>```
+Sirve para darle enfasis a un texto. Este texto se mostrara en negrita.
+
+```
+<p>This sentence contains some <strong>important information</strong>.</p>
+```
+
+### ```<em>```
+Al igual que el tag ```<strong>``` sirve para dar enfasis. Por defeto el texto se mostrara en italica.
+
+```
+<p>This sentence contains some <em>emphasized text</em>.</p>
+```
+
+### ```<s>```
+Se usa para indicar que el texto tiene un strikethrough. Generalemte sirve para indicar que algo se elimino o no es relevante pero sigue estando visible para la referencia.
+
+```
+<p>This is some <s>strikethrough</s> text.</p>
+```
+
+### ```<small>```
+Se usa para indicar que el texto que contiene es mas pequeño.
+
+```
+<p>This is some <small>smaller text</small> in a paragraph.</p>
+```
+
+### ```<hr>```
+Es un ```self closing tag``` que se usa para crear una "regla horizontal"  o una linea horizontal que separa contenido visualmente
+
+```
+<p>This is some content.</p>
+<hr>
+<p>This is some more content.</p>
+```
