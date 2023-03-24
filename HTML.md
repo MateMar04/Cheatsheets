@@ -1,6 +1,8 @@
 HTML proviene de HyperText Markup Language. Es un lenguaje de markup estándar utilizado para crear páginas web y otra información que puede ser mostrada en un navegador web. HTML usa varias etiquetas y atributos para describir la estructura y contenido de una página web, incluyendo encabezados, párrafos, listas, links, imágenes y otros tipos de elementos multimedia.
 HTML es el bloque de construcción básico para el desarrollo web, y es esencial para crear páginas web estáticas y dinámicas. Puede ser utilizado en conjunto con CSS (Cascading Style Sheets) y JavaScript para crear páginas más interactivas y reactivas.
 
+Para mas informacion visite la documentacion oficial de HTML: https://developer.mozilla.org/en-US/docs/Web/HTML
+
 
 ## Etiquetas
 Las etiquetas se usan para definir estructuras y contenido en una página web. Están encerradas entre ```<>``` y usualmente vienen en pares, el ```opening tag```  (```<>```) indicando el inicio de una sección de contenido y el ```closing tag``` (```</>```) indicando el final de la sección.
@@ -413,7 +415,7 @@ Los más comunes son:
 
 
 ### src
-Atributo que se usa para especificar la fuente de multimedia o un archivo que se mostrara en la pagina web. Se puede usar en los tags ```<img>```, ```<audio>```, ```<video>``` y ```<script>```
+Atributo que se utiliza para especificar la fuente de multimedia o un archivo que se mostrara en la página web. Se puede usar en los tags ```<img>```, ```<audio>```, ```<video>``` y ```<script>```
 
 ```
 <img src="image.jpg" alt="Image description">
@@ -421,13 +423,39 @@ Atributo que se usa para especificar la fuente de multimedia o un archivo que se
 ```
 
 
+### value
+Sirve para especificar el valor de un elemento de entrada (`<input>`), como un campo de texto, un botón o un elemento de selección.
+
+Por ejemplo, en un campo de entrada de texto, el atributo `value` se utiliza para establecer el texto predeterminado que se mostrará en el campo antes de que el usuario lo modifique.
+
+```
+<input type="radio" name="genero" value="masculino"> Masculino
+<input type="radio" name="genero" value="femenino"> Femenino
+<input type="radio" name="genero" value="otro"> Otro
+```
+
+
+
 ## ```<input>``` types
 
-### button
+Estos son los tipos más comunes. Para verlos todos visite la documentación de HTML.
 
+`text`: Crea un campo de entrada de texto en el que se puede ingresar texto. 
 
-```
-<input class="favorite styled"
-       type="button"
-       value="Add to favorites">
-```
+`password`: Crea un campo de entrada de contraseña en el que los caracteres ingresados se ocultan.
+
+`number`: Crea un campo de entrada para números.
+
+`checkbox`: Crea una casilla de verificación que se puede marcar o desmarcar.
+
+`radio`: Crea un botón de opción que permite seleccionar una opción de un conjunto de opciones mutuamente excluyentes.
+
+`submit`: Crea un botón para enviar el formulario.
+
+`reset`: Crea un botón para restablecer los valores del formulario a su estado original.
+
+`file`: Crea un campo de entrada para seleccionar un archivo del sistema.
+
+`date`: Crea un campo de entrada para fechas.
+
+`email`: Crea un campo de entrada para direcciones de correo electrónico.
