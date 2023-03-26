@@ -7,6 +7,7 @@ Para mas informacion visite la documentacion oficial de HTML: https://developer.
 ## Etiquetas
 Las etiquetas se usan para definir estructuras y contenido en una página web. Están encerradas entre ```<>``` y usualmente vienen en pares, el ```opening tag```  (```<>```) indicando el inicio de una sección de contenido y el ```closing tag``` (```</>```) indicando el final de la sección.
 Hay etiquetas que no necesitan ```closing tag```, estas se llaman ```self closing tags```
+Los comentarios tienen la siguiente sintaxis ```<!-- myComent -->```. Esta sintaxis se usa para comentarios de una sola línea o comentarios multilínea. 
 
 
 ## Atributos
