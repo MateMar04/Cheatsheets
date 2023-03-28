@@ -184,3 +184,31 @@ Estas unidades son relativas a algo mas, como por ejemplo el tamaño de letra de
     </tr>
   </tbody>
 </table>
+
+
+## Colores
+En CSS hay varias maneras de especificar los colores.
+Se pueden representar con palabras clave como ```red```, ```green```, ```blue```, etc
+
+Tambien se pueden representar con valores hexadecimales como ```#ffffff```. Los colores hexadecimales estan formados por 6 digitos del sistema hexadecimal, el primer par es para el valor del color rojo, el segundo par para el verde y el tercer para el azul. El valor minimo seria ```00``` y el maximo ```ff```. Estos colores se pueden abreviar cuando los dos digitos del par son iguales, por ejemplo ```#ffffff``` se puede abrebiar como ```#fff```, ```#ff00ff``` como ```#f0f```, ```#55ff00``` como ```#5f0``` y asi consecuentemente.
+
+Tambien se pueden reprecentar con ```rgb()``` y ```rgba()```.
+Los colores ```rgb()``` se representan con 3 valores separados por coma, cada uno de estos valores corresponde a rojo, verde y azul. El valor minimo es 0 y el maximo 255, cuando se le quiere sumar transparencia, aparece otro valor llamado ```alpha``` que controla la opacidad, su valor minimo es 0 y el maximo 1.
+
+
+## Variables
+Las variables o ```custom properties``` son una caracreristica poderosa de CSS, que permite definir valores reutilizables a lo largo del codigo. Se declaran con ```--``` seguido del nombre de la variables, y luego el valor. Esta variable podra ser utilizada en todos los elementos heredados de donde esta sea declarada. Una vez definida se puede acceder a la misma con la funcion ```var()``` que toma como primer argumento el nombre de la variable, y el segundo argumento como un valor default. Este valor se suele utilizar para ahorrar errores de acceso a la variable.
+
+```
+:root {
+  --main-color: #0066cc;
+}
+
+h1 {
+  color: var(--main-color, green);
+}
+```
+
+El elemento ```:root``` hace referencia al elemento ```<html>``` por lo que toda la pagina podra acceder a esta variable.
+
+Vale aclarar que hay navegadores que no soportan las variables (Internet Explorer), pero la gran mayoría de navegadores modernos las soportan.
