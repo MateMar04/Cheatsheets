@@ -5,7 +5,7 @@ Un lenguaje basado en prototipos utiliza herencia prototípica para la creación
 El objeto es definido como una colección de pares key-value, en el que las keys son strings y los valores pueden ser cualquier tipo de dato, incluyendo otros objetos.
 Cuando un objeto nuevo es creado, se inicializa clonando un objeto existente, modificándose para cumplir las necesidades del programa. El nuevo objeto hereda todas las propiedades y métodos de su prototipo y puede a su vez añadir nuevas propiedades y métodos o modificar los existentes.
 
-Para mas informacion visite la documentacion oficial de JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+Para más información, visite la documentación oficial de JavaScript: https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 ## Sintaxis
 - En JavaScript el naming por convención es camelCase. Cuando el nombre de una variable, función, objeto, etc. tiene más de una palabra, se escribe la primera palabra en minúscula y las siguientes palabras se escriben con la primera letra mayúscula.

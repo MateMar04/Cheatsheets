@@ -1,8 +1,8 @@
 HTML proviene de HyperText Markup Language. Es un lenguaje de markup estándar utilizado para crear páginas web y otra información que puede ser mostrada en un navegador web. HTML usa varias etiquetas y atributos para describir la estructura y contenido de una página web, incluyendo encabezados, párrafos, listas, links, imágenes y otros tipos de elementos multimedia.
 HTML es el bloque de construcción básico para el desarrollo web, y es esencial para crear páginas web estáticas y dinámicas. Puede ser utilizado en conjunto con CSS (Cascading Style Sheets) y JavaScript para crear páginas más interactivas y reactivas.
-En cuanto a sintaxis generalmente se indenta con dos espacios.
+En cuanto a sintaxis, generalmente se indenta con dos espacios.
 
-Para mas informacion visite la documentacion oficial de HTML: https://developer.mozilla.org/en-US/docs/Web/HTML
+Para más información, visite la documentación oficial de HTML: https://developer.mozilla.org/en-US/docs/Web/HTML
 
 
 ## Etiquetas
@@ -221,7 +221,7 @@ En este ejemplo el atributo ```action``` especifica la URL donde la información
 
 
 ### ```<div>```
-Es un elemento que se utiliza para agrupar otros elementos y aplicar estilos colectivamente. Es un contenedor genérico que no tiene ni especifica sentido o propósito. Estos tags se pueden anidar para crear una jerarquía
+Es un elemento que se utiliza para agrupar otros elementos y aplicar estilos colectivamente. Es un contenedor genérico que no tiene ni especifica, sentido o propósito. Estos tags se pueden anidar para crear una jerarquía
 
 
 ### ```<nav>```

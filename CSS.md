@@ -1,17 +1,17 @@
 # CSS
-Cascading Style Sheets (CSS) es un lenguaje de estilos utilizado para describir la presentacion de un documento HTML o XML, (incluyendo dialectos XML com SVG, MathML o XHTML). CSS describe como los elementos deberian ser renderizados en pantalla, en papel, etc.
-En cuanto a sintaxis generalmente se indenta con dos espacios y los comentarios se escriben de la siguiente manera ```/* MyComment */```
-La meta basica este lenguaje es permitir al motor del navegador "pintar" elementos en la pagina con caracteristicas especificas, como colores, poscicion o decoracion. La sintaxis de CSS consiste en bloques que contienen una ```property```  (es un identificador, que es legible para el humano, que define que caracteristica esta siendo considerada) y un ```value``` (describe como la caracteristica debe ser manejada por el motor. Cada propiedad tiene un conjunto de valores validos).
+Cascading Style Sheets (CSS) es un lenguaje de estilos utilizado para describir la presentación de un documento HTML o XML, (incluyendo dialectos XML como SVG, MathML o XHTML). CSS describe como los elementos deberían ser renderizados en pantalla, en papel, etc.
+En cuanto a sintaxis, generalmente se indenta con dos espacios y los comentarios se escriben de la siguiente manera ```/* MyComment */```
+La meta básica este lenguaje es permitir al motor del navegador “pintar” elementos en la página con características específicas, como colores, posición o decoración. La sintaxis de CSS consiste en bloques que contienen una ```property```  (es un identificador, que es legible para el humano, que define que característica está siendo considerada) y un ```value``` (describe como la característica debe ser manejada por el motor. Cada propiedad tiene un conjunto de valores válidos).
 
-Para mas informacion visite la documentacion oficial de CSS: https://developer.mozilla.org/en-US/docs/Learn/CSS
+Para más información, visite la documentación oficial de CSS: https://developer.mozilla.org/en-US/docs/Learn/CSS
 
 Este codigo se puede escribir de 3 formas distintas:
 - Inline: Se añade el pedazo de codigo directamente a la etiqueta de apertura del elemento en el documento HTML
 - ```<style>```: Añadimos este elemento en el ```<head>``` del documento HTML, con la sintaxis en CSS dentro de este elemento.
-- Archivo .css: Se crea un archivo con terminacion ```.css``` con todos los estilos, luego este se importa en forma de 
+- Archivo .css: Se crea un archivo con terminación ```.css``` con todos los estilos, luego este se importa en forma de 
 
 ## Declaraciones
-Las declaraciones en bloque son declaraciones agrupadas en una estructura delimitada por llaves ```{}``` y tienen el elemento, clase o id a aplicar estos estilos. Cada linea tiene que terminar con un ```;```
+Las declaraciones en bloque son declaraciones agrupadas en una estructura delimitada por llaves ```{}``` y tienen el elemento, clase o id a aplicar estos estilos. Cada línea tiene que terminar con un ```;```
 
 ```
 p { 
@@ -27,17 +27,17 @@ p {
 }
 ```
 
-El primer bloque le aplica una familia de fuente a todos los elementos ```<p>```, el segundo bloque centra el texto a todos los elementos con la clase ```title``` y el ultimo bloque le aplica el color rojo a el elemento con id ```perro```.
+El primer bloque le aplica una familia de fuentes a todos los elementos ```<p>```, el segundo bloque centra el texto a todos los elementos con la clase ```title``` y el último bloque le aplica el color rojo al elemento con id ```perro```.
 
 ## Selectores
 Los selectores se utilizan para delimitar que elementos HTML de nuestro documento queremos aplicar determinado estilo.
-Los selectores tienen determinada jerarquia, mientras mas generales son menos jerarquia tienen. Por ejemplo si tenemos un selector que delimite todos los parrafos del documento y despues tenemos una clase que modifique solo algunos de los parrafos del texto, el navegador le dara prioridad a los estilos de la clase.
+Los selectores tienen determinada jerarquía, mientras más generales son menos jerarquía tienen. Por ejemplo, si tenemos un selector que delimite todos los párrafos del documento y después tenemos una clase que modifique solo algunos de los párrafos del texto, el navegador le dará prioridad a los estilos de la clase.
 
-1. El selector con mas jerarquia es el ```#id```
+1. El selector con más jerarquía es el ```#id```
 2. El selector con jerarquia intermedia es el de clase ```.class```
-3. Y el que tiene menos jerarquia es el selector de elemento
+3. Y el que tiene menos jerarquía es el selector de elemento
 
-Aun asi, los estilos inline tienen prioridad ante todos estos. Tambien si hay dos estilos con el mismo nivel de jerarquia, se le aplicara el ultimo estilo, por ejemplo
+Aun así, los estilos inline tienen prioridad ante todos estos. También si hay dos estilos con el mismo nivel de jerarquía, se le aplicará el último estilo, por ejemplo
 
 ```
 p {
@@ -49,8 +49,8 @@ p {
 }
 ```
 
-El ```<p>``` se renderizara de color azul.
-Tambien existe ```!important```, el motor priorizara este estilo sobre todas las cosas
+El ```<p>``` se renderizará de color azul.
+También existe ```!important```, el motor priorizará este estilo sobre todas las cosas
 
 ```
 p { 
@@ -59,10 +59,10 @@ p {
 ```
 
 ## Pseudoclases y pseudoelementos
-Son selectores especiales que permitan seleccionar elementos basados en su estado o posicion en el documento.
-Algunas psudoclases coomunes son:
-```:hover```: selecciona un elecmento cuando el cursor esta sobre el mismo
-```:active```: Selecciona un elemento que esta siendo cliqueado o presionado
+Son selectores especiales que permitan seleccionar elementos basados en su estado o posición en el documento.
+Algunas psudoclases comunes son:
+```:hover```: selecciona un elemento cuando el cursor está sobre el mismo
+```:active```: Selecciona un elemento que está siendo cliqueado o presionado
 ```:focus```: Selecciona un elemento cuando este tiene el foco (cuando el usuario lo cliquea o tabea hacia este elemento)
 
 ```
@@ -136,10 +136,10 @@ Las unidades absolutas no son relativas y generalmente son siempre del mismo tam
   </tbody>
 </table>
 
-Generalmente la medida mas util de las mencionadas anteriormente es el ```px```
+Generalmente, la medida más útil de las mencionadas anteriormente es él ```px```
 
 ## Unidades Relativas
-Estas unidades son relativas a algo mas, como por ejemplo el tamaño de letra del elemento principal o el tamaño de la ventana grafica. La ventaja de usar estas unidades de medida es que con una planificacion cuidadosa se puede lograr que el tamaño de los elementos se escalen en relacion con todo lo demas de la pagina
+Estas unidades son relativas a algo más, como por ejemplo el tamaño de letra del elemento principal o el tamaño de la ventana gráfica. La ventaja de usar estas unidades de medida es que con una planificación cuidadosa se puede lograr que el tamaño de los elementos se escalen en relación con todo lo demás de la página
 
 <table>
   <thead>
@@ -191,16 +191,16 @@ Estas unidades son relativas a algo mas, como por ejemplo el tamaño de letra de
 
 ## Colores
 En CSS hay varias maneras de especificar los colores.
-Se pueden representar con palabras clave como ```red```, ```green```, ```blue```, etc
+Se pueden representar con palabras clave como ```red```, ```green```, ```blue```, etc.
 
-Tambien se pueden representar con valores hexadecimales como ```#ffffff```. Los colores hexadecimales estan formados por 6 digitos del sistema hexadecimal, el primer par es para el valor del color rojo, el segundo par para el verde y el tercer para el azul. El valor minimo seria ```00``` y el maximo ```ff```. Estos colores se pueden abreviar cuando los dos digitos del par son iguales, por ejemplo ```#ffffff``` se puede abrebiar como ```#fff```, ```#ff00ff``` como ```#f0f```, ```#55ff00``` como ```#5f0``` y asi consecuentemente.
+También se pueden representar con valores hexadecimales como ```#ffffff```. Los colores hexadecimales están formados por 6 dígitos del sistema hexadecimal, el primer par es para el valor del color rojo, el segundo par para el verde y el tercer para el azul. El valor mínimo sería ```00``` y el máximo ```ff```. Estos colores se pueden abreviar cuando los dos dígitos del par son iguales, por ejemplo ```#ffffff``` se puede abreviar como ```#fff```, ```#ff00ff``` como ```#f0f```, ```#55ff00``` como ```#5f0``` y así consecuentemente.
 
-Tambien se pueden reprecentar con ```rgb()``` y ```rgba()```.
-Los colores ```rgb()``` se representan con 3 valores separados por coma, cada uno de estos valores corresponde a rojo, verde y azul. El valor minimo es 0 y el maximo 255, cuando se le quiere sumar transparencia, aparece otro valor llamado ```alpha``` que controla la opacidad, su valor minimo es 0 y el maximo 1.
+También se pueden representar con ```rgb()``` y ```rgba()```.
+Los colores ```rgb()``` se representan con 3 valores separados por coma, cada uno de estos valores corresponde a rojo, verde y azul. El valor mínimo es 0 y el máximo 255, cuando se le quiere sumar transparencia, aparece otro valor llamado ```alpha``` que controla la opacidad, su valor mínimo es 0 y el máximo 1.
 
 
 ## Variables
-Las variables o ```custom properties``` son una caracreristica poderosa de CSS, que permite definir valores reutilizables a lo largo del codigo. Se declaran con ```--``` seguido del nombre de la variables, y luego el valor. Esta variable podra ser utilizada en todos los elementos heredados de donde esta sea declarada. Una vez definida se puede acceder a la misma con la funcion ```var()``` que toma como primer argumento el nombre de la variable, y el segundo argumento como un valor default. Este valor se suele utilizar para ahorrar errores de acceso a la variable.
+Las variables o ```custom properties``` son una característica poderosa de CSS, que permite definir valores reutilizables a lo largo del codigo. Se declaran con ```--``` seguido del nombre de las variables, y luego el valor. Esta variable podrá ser utilizada en todos los elementos heredados de donde esta sea declarada. Una vez definida se puede acceder a la misma con la función ```var()``` que toma como primer argumento el nombre de la variable, y el segundo argumento como un valor default. Este valor se suele utilizar para ahorrar errores de acceso a la variable.
 
 ```
 :root {
@@ -212,6 +212,6 @@ h1 {
 }
 ```
 
-El elemento ```:root``` hace referencia al elemento ```<html>``` por lo que toda la pagina podra acceder a esta variable.
+El elemento ```:root``` hace referencia al elemento ```<html>``` por lo que toda la página podrá acceder a esta variable.
 
 Vale aclarar que hay navegadores que no soportan las variables (Internet Explorer), pero la gran mayoría de navegadores modernos las soportan.
