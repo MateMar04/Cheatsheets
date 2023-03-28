@@ -2,6 +2,9 @@
 Cascading Style Sheets (CSS) es un lenguaje de estilos utilizado para describir la presentacion de un documento HTML o XML, (incluyendo dialectos XML com SVG, MathML o XHTML). CSS describe como los elementos deberian ser renderizados en pantalla, en papel, etc.
 En cuanto a sintaxis generalmente se indenta con dos espacios y los comentarios se escriben de la siguiente manera ```/* MyComment */```
 La meta basica este lenguaje es permitir al motor del navegador "pintar" elementos en la pagina con caracteristicas especificas, como colores, poscicion o decoracion. La sintaxis de CSS consiste en bloques que contienen una ```property```  (es un identificador, que es legible para el humano, que define que caracteristica esta siendo considerada) y un ```value``` (describe como la caracteristica debe ser manejada por el motor. Cada propiedad tiene un conjunto de valores validos).
+
+Para mas informacion visite la documentacion oficial de CSS: https://developer.mozilla.org/en-US/docs/Learn/CSS
+
 Este codigo se puede escribir de 3 formas distintas:
 - Inline: Se añade el pedazo de codigo directamente a la etiqueta de apertura del elemento en el documento HTML
 - ```<style>```: Añadimos este elemento en el ```<head>``` del documento HTML, con la sintaxis en CSS dentro de este elemento.
