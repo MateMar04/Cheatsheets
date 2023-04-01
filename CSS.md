@@ -13,7 +13,7 @@ Este codigo se puede escribir de 3 formas distintas:
 ## Declaraciones
 Las declaraciones en bloque son declaraciones agrupadas en una estructura delimitada por llaves ```{}``` y tienen el elemento, clase o id a aplicar estos estilos. Cada línea tiene que terminar con un ```;```
 
-```
+``` css
 p { 
   font-family: Arial, sans-serif; 
 }
@@ -39,7 +39,7 @@ Los selectores tienen determinada jerarquía, mientras más generales son menos 
 
 Aun así, los estilos inline tienen prioridad ante todos estos. También si hay dos estilos con el mismo nivel de jerarquía, se le aplicará el último estilo, por ejemplo
 
-```
+``` css
 p {
   color: red;
 }
@@ -52,7 +52,7 @@ p {
 El ```<p>``` se renderizará de color azul.
 También existe ```!important```, el motor priorizará este estilo sobre todas las cosas
 
-```
+``` css
 p { 
   color: red !important; 
 }
@@ -65,7 +65,7 @@ Algunas psudoclases comunes son:
 ```:active```: Selecciona un elemento que está siendo cliqueado o presionado
 ```:focus```: Selecciona un elemento cuando este tiene el foco (cuando el usuario lo cliquea o tabea hacia este elemento)
 
-```
+``` css
 a {
   color: blue;
   text-decoration: none;
@@ -202,7 +202,7 @@ Los colores ```rgb()``` se representan con 3 valores separados por coma, cada un
 ## Variables
 Las variables o ```custom properties``` son una característica poderosa de CSS, que permite definir valores reutilizables a lo largo del codigo. Se declaran con ```--``` seguido del nombre de las variables, y luego el valor. Esta variable podrá ser utilizada en todos los elementos heredados de donde esta sea declarada. Una vez definida se puede acceder a la misma con la función ```var()``` que toma como primer argumento el nombre de la variable, y el segundo argumento como un valor default. Este valor se suele utilizar para ahorrar errores de acceso a la variable.
 
-```
+``` css
 :root {
   --main-color: #0066cc;
 }
@@ -215,3 +215,7 @@ h1 {
 El elemento ```:root``` hace referencia al elemento ```<html>``` por lo que toda la página podrá acceder a esta variable.
 
 Vale aclarar que hay navegadores que no soportan las variables (Internet Explorer), pero la gran mayoría de navegadores modernos las soportan.
+
+## Flexbox
+Permite crear diseños flexibles y receptivos en una página web. Flexbox proporciona una forma de diseñar diseños complejos sin tener que recurrir a trucos como utilizar elementos flotantes o posiciones absolutas.
+Con Flexbox, los elementos HTML se pueden organizar en filas o columnas, y se pueden ajustar dinámicamente para adaptarse a diferentes tamaños de pantalla y dispositivos. Se puede controlar el comportamiento de los elementos utilizando las propiedades de Flexbox, como "display", "flex-direction", "justify-content", "align-items" y "flex-grow".
