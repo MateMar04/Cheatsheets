@@ -47,7 +47,7 @@ Linkeea recursos externos, generalmente hojas de estilos (stylesheets)
 Linkeea recursos externos, generalmente scripts en JS
 
 Podemos ver el siguiente ejemplo:
-```
+``` html
 <!DOCTYPE html>
 <html>
   <head>
@@ -69,7 +69,7 @@ Se utiliza para definir la sección ```body``` del documento HTML. Contiene todo
 
 Podemos ver el siguiente ejemplo:
 
-```
+``` html
 <!DOCTYPE html>
 <html>
   <head>
@@ -89,7 +89,7 @@ Podemos ver el siguiente ejemplo:
 Se utilizan para definir títulos. Tienen 6 niveles, mientras más grande es el número que acompaña la h el título es menos importante.
 
 Ejemplo:
-```
+``` html
 <h1>Welcome to my web page</h1>
 <h2>Welcome to my web page</h2>
 <h3>Welcome to my web page</h3>
@@ -102,7 +102,7 @@ Ejemplo:
 ### ```<p>```
 Se utiliza para definir un párrafo de texto.
 
-```
+``` html
 <p>This is a paragraph of text.</p>
 ```
 
@@ -110,7 +110,7 @@ Se utiliza para definir un párrafo de texto.
 ### ```<img>```
 Se utiliza para insertar imágenes en la página web, no necesita ```tag``` de cierre. Utiliza atributos para especificar la fuente, ancho, alto, etc. de la imagen. Esta es una ```self closing tag```
 
-```
+``` html
 <img src="image.jpg" alt="A picture of a cat">
 ```
 
@@ -118,13 +118,13 @@ Se utiliza para insertar imágenes en la página web, no necesita ```tag``` de c
 ### ```<a>```
 Este tag se utiliza para crear hipervínculos o ```anchor links```.
 
-```
+``` html
 <a href="https://www.example.com">Click here</a>
 ```
 
 En este ejemplo el atributo ```href``` especifica una URL, al hacer clic en el anchor te redirija a la URL especificada
 
-```
+``` html
 <a href="#section2">Go to section 2</a>
 ```
 
@@ -135,7 +135,7 @@ En este ejemplo el anchor te lleva a la sección 2 del documento HTML.
 Este tag se utiliza para hacer una lista no ordenada, proviene de "unorderd list".
 Este tag si o si tiene que ir acompañado del tag ```<li>``` "list item" que representa cada elemento de la lista.
 
-```
+``` html
 <ul>
   <li>Elemento 1</li>
   <li>Elemento 2</li>
@@ -147,7 +147,7 @@ Este tag si o si tiene que ir acompañado del tag ```<li>``` "list item" que rep
 ### ```<ol>```
 Este tag se utiliza para hacer listas ordenadas, proviene de "ordered list". Al igual que el tag ```<ul>``` está acompañado del tag ```<li>```.
 
-```
+``` html
 <ol>
   <li>Elemento 1</li>
   <li>Elemento 2</li>
@@ -159,7 +159,7 @@ Este tag se utiliza para hacer listas ordenadas, proviene de "ordered list". Al 
 ### ```<strong>```
 Sirve para darle énfasis a un texto. Este texto se mostrará en negrita.
 
-```
+``` html
 <p>This sentence contains some <strong>important information</strong>.</p>
 ```
 
@@ -167,7 +167,7 @@ Sirve para darle énfasis a un texto. Este texto se mostrará en negrita.
 ### ```<em>```
 Al igual que el tag ```<strong>``` sirve para dar énfasis. Por defecto, el texto se mostrará en itálica.
 
-```
+``` html
 <p>This sentence contains some <em>emphasized text</em>.</p>
 ```
 
@@ -175,7 +175,7 @@ Al igual que el tag ```<strong>``` sirve para dar énfasis. Por defecto, el text
 ### ```<s>```
 Se usa para indicar que el texto tiene un strikethrough. Generalmente, sirve para indicar que algo se eliminó o no es relevante, pero sigue estando visible para la referencia.
 
-```
+``` html
 <p>This is some <s>strikethrough</s> text.</p>
 ```
 
@@ -183,7 +183,7 @@ Se usa para indicar que el texto tiene un strikethrough. Generalmente, sirve par
 ### ```<small>```
 Se usa para indicar que el texto que contiene es más pequeño.
 
-```
+``` html
 <p>This is some <small>smaller text</small> in a paragraph.</p>
 ```
 
@@ -191,7 +191,7 @@ Se usa para indicar que el texto que contiene es más pequeño.
 ### ```<hr>```
 Es un ```self closing tag``` que se usa para crear una "regla horizontal"  o una línea horizontal que separa contenido visualmente
 
-```
+``` html
 <p>This is some content.</p>
 <hr>
 <p>This is some more content.</p>
@@ -201,7 +201,7 @@ Es un ```self closing tag``` que se usa para crear una "regla horizontal"  o una
 ### ```<br>```
 Es un ```self closing tag``` que se usa para crear un salto de línea
 
-```
+``` html
 <p>This is some content.<br>This is some more content on a new line.</p>
 ```
 
@@ -209,7 +209,7 @@ Es un ```self closing tag``` que se usa para crear un salto de línea
 ### ```<form>```
 Es un elemento que se utiliza para crear un formulario que el usuario tenga que completar. Se pueden agregar distintos tipos de campos con el tag ```<input>```, como campos de texto, radiobuttons, checkboxes, dropdowns, botones, etc
 
-```
+``` html
 <form action="/submit-form" method="POST">
   <label for="name">Name:</label>
   <input type="text" id="name" name="name"><br><br>
@@ -227,7 +227,7 @@ Es un elemento que se utiliza para agrupar otros elementos y aplicar estilos col
 ### ```<nav>```
 Se usa para definir una "navbar", una sección de la página que generalmente suele ser el menú y contiene links a otras páginas o secciones
 
-```
+``` html
 <nav>
   <ul>
     <li><a href="/">Home</a></li>
@@ -241,7 +241,7 @@ Se usa para definir una "navbar", una sección de la página que generalmente su
 ### ```<footer>```
 Se utiliza para definir un "footer", una sección de la página. Generalmente, esta contiene información sobre el autor, copyright, fuentes, medios de contacto, links, etc.
 
-```
+``` html
 <footer>
   <p>&copy; 2023 My Website. All rights reserved.</p>
   <nav>
@@ -262,7 +262,7 @@ Se utiliza para definir un "footer", una sección de la página. Generalmente, e
 ### accesskey
 Se usa para proveer un atajo de teclado para acceder a un elemento particular
 
-```
+``` html
 <button accesskey="s">Save</button>
 ```
 
@@ -270,7 +270,7 @@ Se usa para proveer un atajo de teclado para acceder a un elemento particular
 ### class
 Especifica una o más clases para un elemento. Esto sirve para manipular el estilo mediante CSS o JavaScript.
 
-```
+``` html
 <button class="success">Save</button>
 ```
 
@@ -278,7 +278,7 @@ Especifica una o más clases para un elemento. Esto sirve para manipular el esti
 ### contenteditable
 Se usa para hacer que un elemento sea editable por el usuario
 
-```
+``` html
 <div contenteditable="true">
   This text can be edited by the user.
 </div>
@@ -288,7 +288,7 @@ Se usa para hacer que un elemento sea editable por el usuario
 ### hidden
 Se usa para esconder un elemento del usuario en una página web 
 
-```
+``` html
 <div hidden>
   This content is hidden from the user.
 </div>
@@ -298,7 +298,7 @@ Se usa para esconder un elemento del usuario en una página web
 ### id
 Especifica un identificador único para un elemento, se puede utilizar para manipular el elemento mediante CSS o JavaScript.
 
-```
+``` html
 <button id="success">Save</button>
 ```
 
@@ -306,7 +306,7 @@ Especifica un identificador único para un elemento, se puede utilizar para mani
 ### href
 Especifica la URL de un hipervínculo
 
-```
+``` html
 <button href="youtube.com">Save</button>
 ```
 
@@ -314,7 +314,7 @@ Especifica la URL de un hipervínculo
 ### style
 Específica estilos CSS en línea para un elemento
 
-```
+``` html
 <div style="background-color: blue; color: white; padding: 10px;">
   This text has a blue background and white text.
 </div>
@@ -324,7 +324,7 @@ Específica estilos CSS en línea para un elemento
 ### title
 Específica información adicional sobre un elemento, generalmente se muestra como información.
 
-```
+``` html
 <a href="https://www.example.com" title="Visit Example.com">Example</a>
 ```
 
@@ -334,7 +334,7 @@ Específica información adicional sobre un elemento, generalmente se muestra co
 ### accept
 Este atributo toma valores separados por una “coma” los tipos de archivos que están aceptados en ese campo.
 
-```
+``` html
 <input type="file"
        name="poster"
        accept="image/png, image/jpeg">
@@ -344,7 +344,7 @@ Este atributo toma valores separados por una “coma” los tipos de archivos qu
 ### autocomplete
 Se usa para controlar si el campo del formulario tendría que tener el valor automáticamente completado por el navegador o no.
 
-```
+``` html
 <form>
   <label for="username">Username:</label>
   <input type="text" id="username" name="username" autocomplete="on">
@@ -357,7 +357,7 @@ Se usa para controlar si el campo del formulario tendría que tener el valor aut
 ### alt
 Se utiliza para proveer texto a una imagen, en caso de que la imagen no pueda ser mostrada por alguna razón.
 
-```
+``` html
 <img src="image.jpg" alt="A red sports car">
 ```
 
@@ -365,7 +365,7 @@ Se utiliza para proveer texto a una imagen, en caso de que la imagen no pueda se
 ### disabled
 Sirve para deshabilitar un elemento input, tal como un botón, campo de texto, etc.
 
-```
+``` html
 <button type="button" disabled>Click me</button>
 ```
 
@@ -373,7 +373,7 @@ Sirve para deshabilitar un elemento input, tal como un botón, campo de texto, e
 ### maxlength
 Sirve para poner un límite máximo de caracteres en un campo de texto.
 
-```
+``` html
 <input type="text" name="username" maxlength="20">
 ```
 
@@ -381,7 +381,7 @@ Sirve para poner un límite máximo de caracteres en un campo de texto.
 ### readonly
 Sirve para hacer que un campo de texto sea solo apto para la lectura. Aun así el texto dentro de este campo puede ser copiado.
 
-```
+``` html
 <input type="text" name="username" value="johndoe" readonly>
 ```
 
@@ -389,7 +389,7 @@ Sirve para hacer que un campo de texto sea solo apto para la lectura. Aun así e
 ### required
 Se usa para indicar que un campo debe ser completado obligatoriamente
 
-```
+``` html
 <input type="text" name="username" required>
 ```
 
@@ -397,7 +397,7 @@ Se usa para indicar que un campo debe ser completado obligatoriamente
 ### rel
 Se usa para especificar la relación entre el documento actual y el documento linkeado en un "anchor"
 
-```
+``` html
 <a href="https://example.com" rel="noopener noreferrer">Example</a>
 ```
 
@@ -407,7 +407,7 @@ En este ejemplo, él ```noopener noreferrer``` sirve para que la página linkead
 ### target
 Se utiliza para especificar el contexto de búsqueda.
 
-```
+``` html
 <a href="https://example.com" target="_blank">Example</a>
 ```
 
@@ -419,7 +419,7 @@ Los más comunes son:
 ### src
 Atributo que se utiliza para especificar la fuente de multimedia o un archivo que se mostrara en la página web. Se puede usar en los tags ```<img>```, ```<audio>```, ```<video>``` y ```<script>```
 
-```
+``` html
 <img src="image.jpg" alt="Image description">
 <script src="script.js"></script>
 ```
@@ -430,7 +430,7 @@ Sirve para especificar el valor de un elemento de entrada (`<input>`), como un c
 
 Por ejemplo, en un campo de entrada de texto, el atributo `value` se utiliza para establecer el texto predeterminado que se mostrará en el campo antes de que el usuario lo modifique.
 
-```
+``` html
 <input type="radio" name="genero" value="masculino"> Masculino
 <input type="radio" name="genero" value="femenino"> Femenino
 <input type="radio" name="genero" value="otro"> Otro
