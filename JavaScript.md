@@ -10,7 +10,9 @@ Para más información, visite la documentación oficial de JavaScript: https://
 ## Sintaxis
 - En JavaScript el naming por convención es camelCase. Cuando el nombre de una variable, función, objeto, etc. tiene más de una palabra, se escribe la primera palabra en minúscula y las siguientes palabras se escriben con la primera letra mayúscula.
 
-	``` var numerosPares = [2, 4, 6, 8, 10]; ```
+```js 
+var numerosPares = [2, 4, 6, 8, 10]; 
+```
 
 - Las declaraciones suelen estar terminadas con un punto y coma (;).
   ```var nombre = "Mateo";```
@@ -26,7 +28,7 @@ Estos son los principales tipos de datos en JavaScript
 ### Number
 Es usado para representar números, incluyendo enteros y números de punto flotante
 
-```
+``` js
 var myNumber = 10;
 var myDecimalNumber = 1.2;
 ```
@@ -34,7 +36,7 @@ var myDecimalNumber = 1.2;
 ### String
 Es usado para representar texto, se encierra el texto entre comillas simples ('') o comillas dobles ("")
 
-```
+``` js
 var myString = "Hello World!";
 var myNoun = 'Dog';
 ```
@@ -57,21 +59,21 @@ También existen las secuencias de escape que sirven para representar determinad
 ### Boolean
 Es usado para representar valores lógicos (```true``` o ```false```)
 
-```
+```  js
 var myBoolean = true;
 ```
 
 ### Null
 Es usado para representar valores nulos o valores vacíos
 
-```
+``` js
 var myNull = null;
 ```
 
 ### Undefined
 Es usado para representar una variable a la que todavía no se le ha asignado un valor.
 
-```
+``` js
 var x;
 console.log(x); // Output: undefined
 ```
@@ -79,7 +81,7 @@ console.log(x); // Output: undefined
 ### Symbol
 Es usado para representar un valor único e inmutable que puede ser usado como identificador para las propiedades de objeto
 
-```
+``` js
 const obj = {};
 
 const sym = Symbol('foo');
@@ -92,7 +94,7 @@ console.log(obj[sym]); // 'bar'
 ### Object
 Es una colección de pares key-value donde cada key es un string o symbol y el value puede ser cualquier tipo de dato, incluyendo también otro objeto.
 
-```
+``` js
 var myObj = {
   prop1: 'value1',
   prop2: 42,
@@ -106,19 +108,19 @@ var myObj = {
 Para acceder a las propiedades de un objeto se pueden usar dos métodos:
 
 - La notación de punto:
-```
+``` js
 console.log(myObj.prop1);
 ```
 
 - Notación de corchetes:
-```
+``` js
 console.log(myObj["prop1"]);
 ```
 
 
 Las propiedades de estos también se pueden modificar de las dos formas anteriores
 
-```
+``` js
 myObj.prop1 = 10;
 myObj["prop2"] = "hello";
 ```
@@ -130,7 +132,7 @@ JavaScript también tiene dos tipos de datos más que son técnicamente objetos:
 ### Array
 Representa una lista ordenada de valores
 
-```
+``` js
 var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 ```
 
@@ -145,7 +147,7 @@ Los principales métodos de este objeto son:
 ### Function
 Representa un bloque de código reutilizable cada vez que se llama con distintos argumentos. (Argumentos != Parámetros)
 
-```
+``` js
 function add(a, b) {
   return a + b;
 };
@@ -157,7 +159,7 @@ function add(a, b) {
 ### Var
 Es la forma original de declarar variables en JavaScript. Es una variable accesible desde la función definida, es decir, "function-scoped"
 
-```
+``` js
 function example() {
   var x = 5;
   console.log(x);
@@ -169,7 +171,7 @@ console.log(x); // Throws a ReferenceError because x is not defined outside of t
 
 Aun así, si definimos una variable dentro de un bloque, como por ejemplo un ```if``` la variable va a poder ser accesible desde las otras partes del código, ya que ```var``` es "function-scoped" y no "block-scoped" 
 
-```
+``` js
 if (true) {
   var y = 10;
 }
@@ -180,7 +182,7 @@ console.log(y); // Output: 10
 ### Let
 Es una variable que puede ser accedida solo desde el bloque en el que fue declarada. Un bloque es la sección de código encerrado entre llaves ```{}```, tal como una función o un bucle.
 
-```
+``` js
 function example() {
   let x = 1;
   if (true) {
@@ -196,7 +198,7 @@ example();
 Es utilizada para declarar una variable a las que no se les puede reasignar un valor una vez inicializadas. Al igual que ```let``` es una variable "block-scoped". Generalmente, estas variables se escriben en mayúsculas y las palabras están separadas por guiones bajos ```__``` para poder diferenciarlas de otras variables y para no intentar reasignarle valores a lo largo del código. 
 Ej: ```MY_CONSTANT = 10;```
 
-```
+``` js
 var x = 1; // function-scoped variable
 let y = 2; // block-scoped variable
 const Z = 3; // block-scoped constant
@@ -217,7 +219,7 @@ console.log(x, y, Z); // 4 2 3 (x has been re-assigned, y and z are unchanged)
 
 Se emplea para ejecutar un bloque de codigo segun si una condición lógica es ```true``` y si es ```false``` se usa el ```else```. También puede haber condiciones múltiples, en este caso se usa el ```else if``` y se pone la otra condición.
 
-```
+``` js
 if (condition1) {
   statement1;
 } else if (condition2) {
@@ -246,7 +248,7 @@ Permite evaluar una expresión e intentar coincidir la expresión a un valor de 
 - El programa busca una ```case``` que coincida con el valor de la expresión ejecutando el código asociado al mismo.
 - Si no encuentra una coincidencia se ejecuta el caso ```default``` si existe, si no el programa continúa ejecutándose normalmente.
 
-```
+``` js
 switch (fruitType) {
   case "Oranges":
     console.log("Oranges are $0.59 a pound.");
@@ -275,7 +277,7 @@ console.log("Is there anything else you'd like?");
 ### throw
 Se usa para “tirar” una excepción
 
-```
+``` js
 throw "Error2"; // String type
 throw 42; // Number type
 throw true; // Boolean type
@@ -290,7 +292,7 @@ throw {
 Es un bloque de codigo que intenta (```try```) ejecutar código y si este“tira” una excepción, el ```catch```  lo “agarra”.
 También existe el bloque ```finally``` que se ejecuta siempre, ya sea que se agarre la excepción o no.
 
-```
+``` js
 function f() {
   try {
     console.log(0);
@@ -325,23 +327,22 @@ Cuando un ```for``` se ejecuta sucede lo siguiente:
 4. Si está presente se ejecuta la expresión ```afterthought```
 5. Se vuelve al punto 2
 
-```
+``` js
 for (initialization; condition; afterthought)
   statement
-
 ```
 
 ### for..in
 Se ejecuta iterando determinada variable enumerable
 
-```
+``` js
 for (variable in object)
   statement
 ```
 
 Este for itera sobre las propiedades de un objeto
 
-```
+``` js
 const person = { name: 'John', age: 30, address: '123 Main St' };
 
 for (let prop in person) {
@@ -358,14 +359,14 @@ address: 123 Main St
 
 También se ejecuta iterando determinada variable enumerable
 
-```
+``` js
 for (variable of object)
   statement
 ```
 
 Este ```for``` itera sobre valor
 
-```
+``` js
 const arr = [1, 2, 3];
 
 for (let value of arr) {
@@ -383,7 +384,7 @@ OUTPUT:
 Este loop se ejecuta hasta que determinada condición se evalúe como ```false```
 la declaración siempre se ejecuta una vez antes de comprobar la condición, si esta se evalúa como ```true``` la declaración se vuelve a ejecutar hasta que la condición se evalúe como ```false```
 
-```
+``` js
 do
   statement
 while (condition);
@@ -393,7 +394,7 @@ while (condition);
 ### while
 este loop se ejecuta si determinada condición se evalúa como ```true```
 
-```
+``` js
 while (condition)
   statement
 ```
@@ -403,7 +404,7 @@ Las funciones en JavaScript son una parte fundamental del lenguaje, se usan para
 
 ### Declaración de función
 
-```
+``` js
 function greet(name) {
   console.log('Hello, ' + name + '!');
 }
@@ -413,7 +414,7 @@ La función llamada ```greet``` toma un parámetro llamado ```name```. Cuando es
 
 ### Expresión de función
 
-```
+``` js
 const greet = function(name) {
   console.log('Hello, ' + name + '!');
 };
@@ -423,7 +424,7 @@ Esta función es similar a la anterior, pero se define usando una asignación a 
 
 ### Arrow functions
 
-```
+``` js
 const greet = (name) => console.log('Hello, ' + name + '!');
 ```
 
@@ -431,7 +432,7 @@ Este codigo es equivalente al anterior, nada más que esta usa la sintaxis de un
 
 ### IIFEs
 
-```
+``` js
 (function() {
   console.log('This code is self-contained and runs immediately!');
 })();
@@ -451,7 +452,7 @@ Hay dos tipos de sintaxis de parámetros:
 
 ### Parámetros Default
 
-```
+``` js
 function addNumbers(num1, num2) {
   return num1 + num2;
 }
@@ -459,7 +460,7 @@ function addNumbers(num1, num2) {
 
 
 Esta función tiene un parámetro con un valor predeterminado
-```
+``` js
 function greet(name = 'friend') {
   console.log('Hello, ' + name + '!');
 }
@@ -469,7 +470,7 @@ function greet(name = 'friend') {
 ### Parámetros Rest
 Este tipo de sintaxis sirve para tomar cualquier número de argumentos.
 
-```
+``` js
 function sumNumbers(...nums) {
   let sum = 0;
   for (let num of nums) {
@@ -490,7 +491,7 @@ Expresión que se resuelve a un valor
 ### Asignación
 Estos son los operadores de asignación más comunes:
 
-```
+``` js
 x = f()      // Significa x = f()
 x += f()     // Significa x = x + f()
 x -= f()     // Significa x = x - f()
@@ -507,7 +508,7 @@ Un operador de comparación compara los operandos y devuelve un valor lógico ba
 
 
 Teniendo en cuenta que:
-```
+``` js
 const var1 = 3;
 const var2 = 4;
 ```
@@ -517,7 +518,7 @@ const var2 = 4;
 El operador igual (```==```) devuelve ```true``` si los operandos son iguales 
 
 Valores que devuelven ```true```:
-```
+``` js
 3 == var1
 "3" == var1
 3 == '3'
@@ -527,7 +528,7 @@ Valores que devuelven ```true```:
 El operador no igual (```!=```) devuelve ```true``` si los operandos no son iguales
 
 Valores que devuelven ```true```:
-```
+``` js
 var1 != 4  
 var2 != "3"
 ```
@@ -536,7 +537,7 @@ var2 != "3"
 El operador igual estricto (```===```) devuelve ```true``` si los operandos son iguales y del mismo tipo 
 
 Valores que devuelven ```true```:
-```
+``` js
 3 === var1
 ```
 
@@ -544,7 +545,7 @@ Valores que devuelven ```true```:
 El operador no es igual estricto (```!==```) devuelve ```true``` si los operandos no son del mismo tipo o si son del mismo tipo pero distinto valor. 
 
 Valores que devuelven ```true```:
-```
+``` js
 var1 !== "3"  
 3 !== '3'
 ```
@@ -553,7 +554,7 @@ var1 !== "3"
 El operador mayor que (```>```) devuelve ```true``` si el operando de la izquierda es mayor que el de la derecha
 
 Valores que devuelven ```true```:
-```
+``` js
 var2 > var1  
 "12" > 2
 ```
@@ -562,7 +563,7 @@ var2 > var1
 El operador mayor o igual que (```>=```) devuelve ```true``` si el operando de la izquierda es mayor o igual que el de la derecha
 
 Valores que devuelven ```true```:
-```
+``` js
 var2 >= var1  
 var1 >= 3
 ```
@@ -571,7 +572,7 @@ var1 >= 3
 El operador menor que (```<```) devuelve ```true``` si el operando de la izquierda es menor que el de la derecha
 
 Valores que devuelven ```true```:
-```
+``` js
 var1 < var2  
 "2" < 12
 ```
@@ -580,7 +581,7 @@ var1 < var2
 El operador menor o igual que (```<=```) devuelve ```true``` si el operando de la izquierda es menor o igual que el de la derecha
 
 Valores que devuelven ```true```:
-```
+``` js
 var1 <= var2  
 var2 <= 5
 ```
@@ -612,21 +613,21 @@ Ejemplo: Si `x` es 3, entonces `--x` le resta uno y devuelve 2, pero `x--` d
 Estos operadores son comúnmente usados con valores booleanos
 
 #### AND
-```
+``` js
 const a1 = true && true; // t && t returns true
 const a2 = true && false; // t && f returns false
 const a3 = false && true; // f && t returns false
 ```
 
 #### OR
-```
+``` js
 const o1 = true || true; // t || t returns true
 const o2 = false || true; // f || t returns true
 const o3 = true || false; // t || f returns true
 ```
 
 #### NOT
-```
+``` js
 const n1 = !true; // !t returns false
 const n2 = !false; // !f returns true
 ```
@@ -635,11 +636,11 @@ const n2 = !false; // !f returns true
 
 ### String Operators
 
-```
+``` js
 console.log("my " + "string"); // console logs the string "my string".
 ```
 
-```
+``` js
 let mystring = "alpha";
 mystring += "bet"; // evaluates to "alphabet" and assigns this value to mystring.
 ```
@@ -647,12 +648,12 @@ mystring += "bet"; // evaluates to "alphabet" and assigns this value to mystring
 ### Operadores Ternarios
 Son operadores que toman tres operandos.
 
-```
+``` js
 condition ? val1 : val2
 ```
 
 Si la condición es ```true``` el valor es ```val1```, si es ```false``` es el valor ```val2```
 
-```
+``` js
 const status = age >= 18 ? "adult" : "minor";
 ```
