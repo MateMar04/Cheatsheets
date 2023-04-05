@@ -2,7 +2,7 @@
 Bootstrap es un popular framework de front-end utilizado para diseñar y desarrollar sitios web responsivos y móviles.
 Bootstrap proporciona un conjunto de componentes preconstruidos en HTML, CSS y JavaScript, como formularios, botones, modales, barras de navegación y carruseles, que los desarrolladores pueden usar para construir páginas web rápida y fácilmente. El framework también incluye un sistema de rejilla que permite a los desarrolladores crear diseños responsivos para sus sitios web que se adaptan a diferentes tamaños de pantalla y dispositivos. 
 Uno de los principales beneficios de usar Bootstrap es que simplifica el proceso de desarrollo web al proporcionar un conjunto estándar de componentes de interfaz de usuario y estilos que se pueden personalizar fácilmente para satisfacer requisitos de diseño específicos.
-Para incluir bootstrap en nuestro proyecto se deben pegar las siguientes líneas en el ```<head>``` del documento HTML:
+Para incluir bootstrap en nuestro proyecto se deben pegar las siguientes de css dentro del tag ```<head>```  del y el tag ```<script>``` antes del cierre del tag ```<body>``` del documento HTML:
 ``` html
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
