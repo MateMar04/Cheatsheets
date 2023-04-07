@@ -15,7 +15,7 @@ React está escrito en JavaScript y se puede utilizar con una variedad de otras 
 5. **Soporte de React Native:** React se integra bien con React Native, lo que permite a los desarrolladores crear aplicaciones móviles nativas para iOS y Android utilizando el mismo código base que su aplicación web.
 6. **Modularidad:** React fomenta la modularidad del código, lo que permite que se pueda dividir en componentes más pequeños y fáciles de mantener.
 
-Para más información, visite la documentación oficial de React: https://react.dev/
+Para más información, visite la documentación oficial de React: https://react.dev/ o la documentación desactualizada que también puede tener información útil https://legacy.reactjs.org/docs/getting-started.html
 
 ## Conceptos Básicos de React
 
