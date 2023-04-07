@@ -123,17 +123,17 @@ En general, los componentes de clase de React son más adecuados para componente
 ### Hooks
 React Hooks es una caracteristica que permite usar estado y otras caracteristicas de React sin escribir un componente de clase. Con Hooks, se puede agregar estado y otras caracteristicas.
 
-- ```useState:``` esto te permite agregar estado a tu componente de función. Puedes usarlo para almacenar y actualizar variables.
-- ```useEffect:``` esto te permite realizar efectos secundarios, como buscar datos o actualizar el DOM, en tu componente de función. Puedes usarlo para realizar acciones después de que se haya renderizado el componente.
-- ```useContext:``` esto te permite acceder al contexto en tu componente de función. Puedes usarlo para compartir datos entre componentes sin tener que pasar props hacia abajo en cada nivel de la jerarquía de componentes.
-- ```useReducer:``` esto te permite administrar el estado con una función reductora. Puedes usarlo para actualizar el estado en función del estado anterior, similar a cómo lo harías con Redux.
-- ```useCallback:``` esto te permite memoizar una función, lo que puede mejorar el rendimiento al evitar re-renderizaciones innecesarias de tu componente.
-- ```useMemo:``` esto te permite memoizar un valor, lo que puede mejorar el rendimiento al evitar recalculaciones innecesarias de un valor. 
+- ```useState:``` Esto te permite agregar estado a tu componente de función. Puedes usarlo para almacenar y actualizar variables.
+- ```useEffect:``` Esto te permite realizar efectos secundarios, como buscar datos o actualizar el DOM, en tu componente de función. Puedes usarlo para realizar acciones después de que se haya renderizado el componente.
+- ```useContext:``` Esto te permite acceder al contexto en tu componente de función. Puedes usarlo para compartir datos entre componentes sin tener que pasar props hacia abajo en cada nivel de la jerarquía de componentes.
+- ```useReducer:``` Esto te permite administrar el estado con una función reductora. Puedes usarlo para actualizar el estado en función del estado anterior, similar a cómo lo harías con Redux.
+- ```useCallback:``` Esto te permite memoizar una función, lo que puede mejorar el rendimiento al evitar re-renderizaciones innecesarias de tu componente.
+- ```useMemo:``` Esto te permite memoizar un valor, lo que puede mejorar el rendimiento al evitar recalculaciones innecesarias de un valor. 
 
 Los Hooks proporciona una forma más concisa y legible de administrar el estado y realizar efectos secundarios en tus componentes de React.
 
 ### Props
-React props (abreviatura de "propiedades") son una forma de pasar datos desde un componente "padre" a un componente "hijo" en una aplicación de React.
+React props (abreviatura de “propiedades”) son una forma de pasar datos desde un componente “padre” a un componente “hijo” en una aplicación de React.
 Son valores inmutables que se pasan como argumentos a un componente de React en su invocación. Los componentes de React pueden aceptar cualquier cantidad de props. Puedes pasar cualquier tipo de dato como una prop, incluyendo cadenas de texto, números, booleanos, objetos y funciones.
 
 ``` jsx
@@ -217,3 +217,67 @@ class Button extends Component {
 ```
 
 En este ejemplo, se ha pasado el valor `'foo'` a la función `handleClick` utilizando una función de flecha en lugar de la función directamente.
+
+### Elementos vs Componentes
+Los elementos son los menores "bloques de construccion" en React, mientras que un componente es codigo reutilizable que encapsula uno o varios elementos y su comportamiento. 
+
+Elemento:
+``` jsx
+const element = <h1>Hello, world!</h1>;
+```
+
+Componente:
+``` jsx
+import React from 'react';
+
+function Greeting(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+```
+
+### Crear un projecto de React
+1.  Instala Node.js y npm (Node Package Manager) en tu ordenador si aún no lo has hecho.
+2.  Abre una ventana de terminal o de símbolo del sistema.
+3.  Instala el paquete `create-react-app` globalmente ejecutando el siguiente comando: `npm install -g create-react-app`. Este paquete proporciona una manera conveniente de crear un nuevo proyecto de React con una configuración básica.
+4.  Crea un nuevo proyecto de React ejecutando `create-react-app <nombre-del-proyecto>`. Reemplaza `<nombre-del-proyecto>` con el nombre que quieras darle a tu proyecto.
+5.  Una vez que se haya creado el proyecto, navega hasta el directorio del proyecto ejecutando `cd <nombre-del-proyecto>`.
+6.  Inicia el servidor de desarrollo ejecutando `npm start`. Esto abrirá una nueva pestaña en tu navegador por defecto que muestra tu aplicación de React.
+7.  Puedes empezar a modificar el código en la carpeta `src` para construir tu aplicación de React.
+
+
+### Estructura de un Projecto React
+La estructura de un proyecto de React puede variar en función de las necesidades del proyecto y las preferencias del desarrollador, pero aquí te muestro una estructura comúnmente utilizada:
+
+```
+my-react-app/
+├── node_modules/
+├── public/
+│   ├── index.html
+│   └── favicon.ico
+├── src/
+│   ├── index.js
+│   ├── App.js
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Footer.js
+│   │   └── ...
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── About.js
+│   │   └── ...
+│   ├── assets/
+│   │   ├── images/
+│   │   ├── styles/
+│   │   └── ...
+│   └── ...
+├── package.json
+├── package-lock.json
+└── README.md
+```
+
+-   `node_modules/` es el directorio que contiene las dependencias de Node.js que necesita tu proyecto.
+-   `public/` es el directorio que contiene archivos estáticos que se servirán a través del servidor. El archivo `index.html` es el punto de entrada de la aplicación y el `favicon.ico` es el icono que se muestra en la pestaña del navegador.
+-   `src/` es el directorio que contiene el código fuente de la aplicación. `index.js` es el punto de entrada de la aplicación y es donde se renderiza el componente principal. `App.js` es el componente principal que se renderiza en el `index.js`. `components/` es el directorio que contiene los componentes reutilizables que se utilizan en la aplicación. `pages/` es el directorio que contiene los componentes que representan las diferentes páginas de la aplicación. `assets/` es el directorio que contiene los archivos estáticos como imágenes y estilos CSS.
+-   `package.json` es el archivo que contiene la información sobre las dependencias del proyecto, scripts y otra información útil para el proyecto.
+-   `package-lock.json` es el archivo que se genera automáticamente y contiene información sobre las versiones exactas de las dependencias instaladas.
+-   `README.md` es el archivo que contiene información sobre el proyecto.
