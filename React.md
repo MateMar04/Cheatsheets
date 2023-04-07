@@ -15,7 +15,9 @@ React está escrito en JavaScript y se puede utilizar con una variedad de otras 
 5. **Soporte de React Native:** React se integra bien con React Native, lo que permite a los desarrolladores crear aplicaciones móviles nativas para iOS y Android utilizando el mismo código base que su aplicación web.
 6. **Modularidad:** React fomenta la modularidad del código, lo que permite que se pueda dividir en componentes más pequeños y fáciles de mantener.
 
-## Conceptos Basicos de React
+Para más información, visite la documentación oficial de React: https://react.dev/
+
+## Conceptos Básicos de React
 
 ### DOM 
  Significa Document Object Model y es una representación estructurada y jerárquica de un documento HTML o XML en forma de árbol. En otras palabras, el DOM es una interfaz de programación de aplicaciones (API) que permite a los desarrolladores acceder y manipular elementos HTML y XML en una página web. 
@@ -121,14 +123,14 @@ En este ejemplo, el componente `Button` tiene un estado interno `count` que se i
 En general, los componentes de clase de React son más adecuados para componentes que necesitan tener un estado interno o métodos de ciclo de vida complejos. Sin embargo, debido a que los componentes funcionales son más simples y más concisos, son una buena opción para componentes más simples que no necesitan estas características.
 
 ### Hooks
-React Hooks es una caracteristica que permite usar estado y otras caracteristicas de React sin escribir un componente de clase. Con Hooks, se puede agregar estado y otras caracteristicas.
+React Hooks es una característica que permite usar estado y otras características de React sin escribir un componente de clase. Con Hooks, se puede agregar estado y otras características.
 
 - ```useState:``` Esto te permite agregar estado a tu componente de función. Puedes usarlo para almacenar y actualizar variables.
 - ```useEffect:``` Esto te permite realizar efectos secundarios, como buscar datos o actualizar el DOM, en tu componente de función. Puedes usarlo para realizar acciones después de que se haya renderizado el componente.
 - ```useContext:``` Esto te permite acceder al contexto en tu componente de función. Puedes usarlo para compartir datos entre componentes sin tener que pasar props hacia abajo en cada nivel de la jerarquía de componentes.
 - ```useReducer:``` Esto te permite administrar el estado con una función reductora. Puedes usarlo para actualizar el estado en función del estado anterior, similar a cómo lo harías con Redux.
-- ```useCallback:``` Esto te permite memoizar una función, lo que puede mejorar el rendimiento al evitar re-renderizaciones innecesarias de tu componente.
-- ```useMemo:``` Esto te permite memoizar un valor, lo que puede mejorar el rendimiento al evitar recalculaciones innecesarias de un valor. 
+- ```useCallback:``` Esto te permite memorizar una función, lo que puede mejorar el rendimiento al evitar re-renderizaciones innecesarias de tu componente.
+- ```useMemo:``` Esto te permite memorizar un valor, lo que puede mejorar el rendimiento al evitar recalculaciones innecesarias de un valor. 
 
 Los Hooks proporciona una forma más concisa y legible de administrar el estado y realizar efectos secundarios en tus componentes de React.
 
@@ -219,7 +221,7 @@ class Button extends Component {
 En este ejemplo, se ha pasado el valor `'foo'` a la función `handleClick` utilizando una función de flecha en lugar de la función directamente.
 
 ### Elementos vs Componentes
-Los elementos son los menores "bloques de construccion" en React, mientras que un componente es codigo reutilizable que encapsula uno o varios elementos y su comportamiento. 
+Los elementos son los menores "bloques de construcción" en React, mientras que un componente es codigo reutilizable que encapsula uno o varios elementos y su comportamiento. 
 
 Elemento:
 ``` jsx
@@ -235,7 +237,7 @@ function Greeting(props) {
 }
 ```
 
-### Crear un projecto de React
+### Crear un proyecto de React
 1.  Instala Node.js y npm (Node Package Manager) en tu ordenador si aún no lo has hecho.
 2.  Abre una ventana de terminal o de símbolo del sistema.
 3.  Instala el paquete `create-react-app` globalmente ejecutando el siguiente comando: `npm install -g create-react-app`. Este paquete proporciona una manera conveniente de crear un nuevo proyecto de React con una configuración básica.
@@ -245,7 +247,7 @@ function Greeting(props) {
 7.  Puedes empezar a modificar el código en la carpeta `src` para construir tu aplicación de React.
 
 
-### Estructura de un Projecto React
+### Estructura de un Proyecto React
 La estructura de un proyecto de React puede variar en función de las necesidades del proyecto y las preferencias del desarrollador, pero aquí te muestro una estructura comúnmente utilizada:
 
 ```
