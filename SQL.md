@@ -718,3 +718,34 @@ SELECT c.customer_id, first_name, last_name, COUNT(*)
 GROUP BY c.customer_id, first_name, last_name
 HAVING COUNT(*) = 1
 ```
+
+### Operaciones de Conjuntos
+
+![[1.png]]
+
+``` sql
+SELECT *  
+FROM film  
+WHERE NOT EXISTS(SELECT * FROM inventory WHERE film.film_id = inventory.film_id);
+```
+Todas las peliculas que no esten en el inventario
+
+
+<hr>
+
+![[3.png]]
+``` sql
+SELECT *  
+FROM film  
+WHERE EXISTS(SELECT * FROM inventory WHERE film.film_id = inventory.film_id);
+```
+Todas las peliculas que esten en el inventario.
+
+<hr>
+
+![[5.png]]
+
+``` sql
+SELECT *  
+FROM film, inventory;
+```
