@@ -721,7 +721,7 @@ HAVING COUNT(*) = 1
 
 ### Operaciones de Conjuntos
 
-[Imgur](https://imgur.com/nccypto)
+<img src="https://imgur.com/nccypto.png">
 
 
 ``` sql
@@ -734,7 +734,8 @@ Todas las peliculas que no esten en el inventario
 
 <hr>
 
-![[3.png]]
+<img src="https://imgur.com/OzRmDRh.png">
+
 ``` sql
 SELECT *  
 FROM film  
@@ -744,7 +745,7 @@ Todas las peliculas que esten en el inventario.
 
 <hr>
 
-![[5.png]]
+<img src="https://imgur.com/sbSIV3r.png">
 
 ``` sql
 SELECT *  
