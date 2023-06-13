@@ -721,7 +721,7 @@ HAVING COUNT(*) = 1
 
 ### Operaciones de Conjuntos
 
-<img src="https://imgur.com/nccypto" title="source: imgur.com" />
+[Imgur](https://imgur.com/nccypto)
 
 
 ``` sql
