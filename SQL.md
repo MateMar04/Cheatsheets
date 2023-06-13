@@ -721,7 +721,8 @@ HAVING COUNT(*) = 1
 
 ### Operaciones de Conjuntos
 
-![[1.png]]
+<img src="https://imgur.com/nccypto" title="source: imgur.com" />
+
 
 ``` sql
 SELECT *  
